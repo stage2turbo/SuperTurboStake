@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2013 The TurboStake developers
+// Copyright (c) 2011-2013 The SuperTurbostake developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -74,7 +74,7 @@ bool CWallet::AddCScript(const CScript& redeemScript)
     return CWalletDB(strWalletFile).WriteCScript(Hash160(redeemScript), redeemScript);
 }
 
-// TurboStake: optional setting to unlock wallet for block minting only;
+// SuperTurbostake: optional setting to unlock wallet for block minting only;
 //         serves to disable the trivial sendmoney when OS account compromised
 bool fWalletUnlockMintOnly = false;
 
@@ -924,7 +924,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
     }
 }
 
-// TurboStake: total coins staked (non-spendable until maturity)
+// SuperTurbostake: total coins staked (non-spendable until maturity)
 int64 CWallet::GetStake() const
 {
     int64 nTotal = 0;
@@ -990,7 +990,7 @@ bool CWallet::SelectCoinsMinConf(int64 nTargetValue, unsigned int nSpendTime, in
                     continue;
 
                 if (pcoin->nTime > nSpendTime)
-                    continue;  // TurboStake: timestamp must not exceed spend time
+                    continue;  // SuperTurbostake: timestamp must not exceed spend time
 
                 int64 n = pcoin->vout[i].nValue;
 
@@ -1183,7 +1183,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64> >& vecSend, CW
                     nFeeRet += nMoveToFee;
                 }
 
-                // TurboStake: sub-cent change is moved to fee
+                // SuperTurbostake: sub-cent change is moved to fee
                 if (nChange > 0 && nChange < MIN_TXOUT_AMOUNT)
                 {
                     nFeeRet += nChange;
@@ -1198,7 +1198,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64> >& vecSend, CW
                     else
                     {
                         // no coin control: send change to newly generated address unless avatar mode is enabled
-                        if (!GetBoolArg("-avatar")) // TurboStake: not avatar mode
+                        if (!GetBoolArg("-avatar")) // SuperTurbostake: not avatar mode
                         {
                             // Note: We use a new key here to keep it from being obvious which side is the change.
                             //  The drawback is that by not reusing a previous key, the change may be lost if a
@@ -1265,7 +1265,7 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, int64 nValue, CWalletTx& w
     return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, coinControl);
 }
 
-// TurboStake: create coin stake transaction
+// SuperTurbostake: create coin stake transaction
 bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int64 nSearchInterval, CTransaction& txNew)
 {
     // The following split & combine thresholds are important to security
@@ -1823,8 +1823,8 @@ int64 CWallet::GetOldestKeyPoolTime()
     return keypool.nTime;
 }
 
-// TurboStake: check 'spent' consistency between wallet and txindex
-// TurboStake: fix wallet spent state according to txindex
+// SuperTurbostake: check 'spent' consistency between wallet and txindex
+// SuperTurbostake: fix wallet spent state according to txindex
 void CWallet::FixSpentCoins(int& nMismatchFound, int64& nBalanceInQuestion, bool fCheckOnly)
 {
     nMismatchFound = 0;
@@ -1873,7 +1873,7 @@ void CWallet::FixSpentCoins(int& nMismatchFound, int64& nBalanceInQuestion, bool
     }
 }
 
-// TurboStake: disable transaction (only for coinstake)
+// SuperTurbostake: disable transaction (only for coinstake)
 void CWallet::DisableTransaction(const CTransaction &tx)
 {
     if (!tx.IsCoinStake() || !IsFromMe(tx))

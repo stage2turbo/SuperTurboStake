@@ -1,6 +1,6 @@
-TurboStake (TurboStake) 0.4.0 BETA
+SuperTurbostake (SuperTurbostake) 0.4.0 BETA
 
-Copyright (c) 2011-2014 TurboStake (TurboStake) Developers
+Copyright (c) 2011-2014 SuperTurbostake (SuperTurbostake) Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file license.txt or http://www.opensource.org/licenses/mit-license.php.
 This product includes software developed by the OpenSSL Project for use in
@@ -10,7 +10,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-TurboStake is a free open source project derived from Bitcoin, with
+SuperTurbostake is a free open source project derived from Bitcoin, with
 the goal of providing a long-term energy-efficient crypto-currency.
 Built on the foundation of Bitcoin, innovations such as proof-of-stake
 help further advance the field of crypto-currency.
@@ -18,35 +18,35 @@ help further advance the field of crypto-currency.
 
 Setup
 -----
-After completing windows setup then run TurboStake-qt.
-Alternatively you can run windows command line (cmd) in TurboStake program dir.
+After completing windows setup then run SuperTurbostake-qt.
+Alternatively you can run windows command line (cmd) in SuperTurbostake program dir.
   cd daemon
-  TurboStaked
-You would need to create a configuration file TurboStake.conf in the default
-wallet directory. Grant access to TurboStaked/TurboStake-qt in anti-virus and firewall
+  SuperTurbostaked
+You would need to create a configuration file SuperTurbostake.conf in the default
+wallet directory. Grant access to SuperTurbostaked/SuperTurbostake-qt in anti-virus and firewall
 applications if necessary.
 
 The software automatically finds other nodes to connect to.  You can
 enable Universal Plug and Play (UPnP) with your router/firewall
 or forward port 6901 (TCP) to your computer so you can receive
-incoming connections.  TurboStake works without incoming connections,
-but allowing incoming connections helps the TurboStake network.
+incoming connections.  SuperTurbostake works without incoming connections,
+but allowing incoming connections helps the SuperTurbostake network.
 
 
 Upgrade
 -------
 All your existing coins/transactions should be intact with the upgrade.
 To upgrade from 0.3, first backup wallet in qt menu or by command line
-TurboStaked backupwallet <destination_backup_file>
-Then shutdown TurboStaked by
-TurboStaked stop
+SuperTurbostaked backupwallet <destination_backup_file>
+Then shutdown SuperTurbostaked by
+SuperTurbostaked stop
 Uninstall v0.3 client, download and install v0.4 client.
 If upgrade is performed after upgrade deadline, blockchain re-download is
 required.
 
 
 See the documentation/wiki at github:
-  http://github.com/TurboStake/TurboStake
+  http://github.com/SuperTurbostake/SuperTurbostake
 for help and more information.
 
 

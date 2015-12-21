@@ -114,7 +114,7 @@ void AskPassphraseDialog::accept()
                 if(model->setWalletEncrypted(true, newpass1))
                 {
                     QMessageBox::warning(this, tr("Wallet encrypted"),
-                                         tr("TurboStake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TurboStakes from being stolen by malware infecting your computer."));
+                                         tr("SuperTurbostake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer."));
                     QApplication::quit();
                 }
                 else
