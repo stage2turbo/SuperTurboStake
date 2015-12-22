@@ -979,7 +979,7 @@ int64 GetProofOfStakeReward(int64 nCoinAge)
 }
 
 static const int64 nTargetTimespan = 1 * 24 * 60 * 60;  // one week
-static const int64 nTargetSpacingWorkMax = 12 * 20 STAKE_TARGET_SPACING; // 2-hour
+static const int64 nTargetSpacingWorkMax = 12 * 20 * STAKE_TARGET_SPACING; // 2-hour
 
 //
 // minimum amount of work that could possibly be required nTime after
