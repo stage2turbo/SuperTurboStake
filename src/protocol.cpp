@@ -22,8 +22,8 @@ static unsigned char pchMessageStartTestNew[4] = { 0xf2, 0xe2, 0xc0, 0xe1 };
 static unsigned int nMessageStartTestSwitchTime = 1346200000;
 
 // SuperTurbostake message start (switch from Bitcoin's in v0.2)
-static unsigned char pchMessageStartBitcoin[4] = { 0xcf, 0xbe, 0xb4, 0xfc };
-static unsigned char pchMessageStartSuperTurbostake[4] = { 0xfc, 0xb9, 0xc8, 0xe3 };
+static unsigned char pchMessageStartBitcoin[4] = { 0xfc, 0xbe, 0xfc, 0xb9};
+static unsigned char pchMessageStartSuperTurbostake[4] = { 0xfc, 0xb9, 0xb9, 0xe3 };
 static unsigned int nMessageStartSwitchTime = 1347300000;
 
 void GetMessageStart(unsigned char pchMessageStart[], bool fPersistent)
