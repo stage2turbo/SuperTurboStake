@@ -1139,7 +1139,7 @@ void MapPort(bool /* unused fMapPort */)
 // The second name should resolve to a list of seed addresses.
 // testnet dns seed begins with 't', all else are SuperTurbostake dns seeds.
 static const char *strDNSSeed[][2] = {
-        {"seed", "54.84.249.89"},
+        {"seed", "46.188.4.74"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
