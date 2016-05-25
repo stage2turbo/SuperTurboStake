@@ -26,7 +26,7 @@
 using namespace std;
 using namespace boost;
 
-static const int MAX_OUTBOUND_CONNECTIONS = 8;
+static const int MAX_OUTBOUND_CONNECTIONS = 15;
 
 void ThreadMessageHandler2(void* parg);
 void ThreadSocketHandler2(void* parg);
@@ -1139,7 +1139,8 @@ void MapPort(bool /* unused fMapPort */)
 // The second name should resolve to a list of seed addresses.
 // testnet dns seed begins with 't', all else are SuperTurbostake dns seeds.
 static const char *strDNSSeed[][2] = {
-        {"seed", "46.188.4.74"},
+        {"seed", "212.24.96.36"},
+		{"1337", "212.24.106.51"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1209,10 +1210,10 @@ void ThreadDNSAddressSeed2(void* parg)
 
 
 
-// Physical IP seeds: 32-bit IPv4 addresses: e.g. 178.33.22.32 = 0x201621b2
+// Physical IP seeds: 32-bit IPv4 addresses converted to hex. thx zoot
 unsigned int pnSeed[] =
 {
-    0x3654F959
+    0xd4186024, 0xd4186a33
 };
 
 void DumpAddresses()
