@@ -2598,7 +2598,7 @@ string GetWarnings(string strFor)
     if (Checkpoints::IsSyncCheckpointTooOld(60 * 60 * 24 * 15) && !fTestNet)
     {
         nPriority = 100;
-        strStatusBar = "SuperTurbostake";
+        strStatusBar = "";
     }
 
     // SuperTurbostake: if detected invalid checkpoint enter safe mode
