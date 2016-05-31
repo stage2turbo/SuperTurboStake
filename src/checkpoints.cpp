@@ -30,7 +30,7 @@ namespace Checkpoints
         ( 4200, uint256("0x00000000000944b4a41f1b68723b884103174e9cce84189de83af933c44971c0"))
         ( 42000, uint256("0x58443ee65bf8e71eace2bc8f7acdec8402c985844b598153470108e5f52001ff"))
         ( 74200, uint256("0x6fc3a612331d9a4fadeb346fb983564cdd4818550d7299d0d730ea5c9d553d81"))
-		( 102894, uint256("0xb8c1a9be79e0a7a93bfeb23734efd844a7d376bcb252f42917d6a8da3c76f8f3"))
+	( 102894, uint256("0xb8c1a9be79e0a7a93bfeb23734efd844a7d376bcb252f42917d6a8da3c76f8f3"))
         ;
 
     bool CheckHardened(int nHeight, const uint256& hash)
@@ -369,7 +369,7 @@ namespace Checkpoints
 }
 
 // SuperTurbostake: sync-checkpoint master key
-const std::string CSyncCheckpoint::strMasterPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";
+const std::string CSyncCheckpoint::strMasterPubKey = "04f1a99942f4568b8c6daba2f8dee549f1a9a580034a092e51f9879b3521394a90cc8eea850defd8414f32f67af437235541408b2c63a5607f86e7adbd794b59c8";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
