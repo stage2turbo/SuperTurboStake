@@ -1,4 +1,4 @@
-# SuperTurbostake Official Development Repository
+# stage2turbo Official Development Repository
 
 ## What is SuperTurbostake?
 
