@@ -972,7 +972,7 @@ int64 GetProofOfWorkReward(unsigned int nBits)
 // SuperTurbostake: miner's coin stake is rewarded based on coin age spent (coin-days)
 int64 GetProofOfStakeReward(int64 nCoinAge)
 {
-    static int64 nRewardCoinYear = 5000 * CENT;  // creation amount per coin-year
+    static int64 nRewardCoinYear = 50 * CENT;  // creation amount per coin-year
     int64 nSubsidy = nCoinAge * 33 / (365 * 33 + 8) * nRewardCoinYear;
 
     strMotivational = "";
