@@ -38,8 +38,8 @@
         <file alias="key">res/icons/key.png</file>
         <file alias="filesave">res/icons/filesave.png</file>
         <file>res/icons/horizontal_trans-no-shadow.png</file>
-        <file alias="SuperTurbostake_icon">res/icons/SuperTurbostake.png</file>
-        <file alias="SuperTurbostake_tooltip">res/icons/SuperTurbostake.png</file>
+        <file alias="SuperTurbostake_icon">res/icons/Heirloom.png</file>
+        <file alias="SuperTurbostake_tooltip">res/icons/Heirloom.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>

@@ -4,24 +4,24 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SuperTurbostake</source>
-        <translation>À propos de SuperTurbostake</translation>
+        <source>About Heirloom</source>
+        <translation>À propos de Heirloom</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="53"/>
-        <source>&lt;b&gt;SuperTurbostake&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;SuperTurbostake&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Heirloom&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Heirloom&lt;/b&gt; version</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="85"/>
-        <source>Copyright © 2011-2013 SuperTurbostake Developers
+        <source>Copyright © 2011-2013 Heirloom Developers
 
 This is experimental software.
 
 Distributed under the MIT/X11 software license, see the accompanying file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>Copyright © 2011-2013 Développeurs de SuperTurbostake
+        <translation>Copyright © 2011-2013 Développeurs de Heirloom
 
 Ce logiciel est en phase expérimentale.
 
@@ -39,8 +39,8 @@ Ce produit inclut des logiciels développés par OpenSSL Project pour utilisatio
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SuperTurbostake addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Voici vos adresses SuperTurbostake qui vous permettent de recevoir des paiements.  Vous pouvez donner une adresse différente à chaque expéditeur afin de savoir qui vous paye.</translation>
+        <source>These are your Heirloom addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Voici vos adresses Heirloom qui vous permettent de recevoir des paiements.  Vous pouvez donner une adresse différente à chaque expéditeur afin de savoir qui vous paye.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="33"/>
@@ -239,8 +239,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="112"/>
-        <source>SuperTurbostake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
-        <translation>SuperTurbostake va à présent se fermer pour terminer la procédure de cryptage. N&apos;oubliez pas que le chiffrement de votre porte-monnaie ne peut pas fournir une protection totale contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
+        <source>Heirloom will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
+        <translation>Heirloom va à présent se fermer pour terminer la procédure de cryptage. N&apos;oubliez pas que le chiffrement de votre porte-monnaie ne peut pas fournir une protection totale contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="208"/>
@@ -294,8 +294,8 @@ Are you sure you wish to encrypt your wallet?</source>
     <name>SuperTurbostakeGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="69"/>
-        <source>SuperTurbostake Wallet</source>
-        <translation>Porte-monnaie SuperTurbostake</translation>
+        <source>Heirloom Wallet</source>
+        <translation>Porte-monnaie Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="142"/>
@@ -355,8 +355,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="201"/>
-        <source>Send coins to a SuperTurbostake address</source>
-        <translation>Envoyer des pièces à une adresse SuperTurbostake</translation>
+        <source>Send coins to a Heirloom address</source>
+        <translation>Envoyer des pièces à une adresse Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="206"/>
@@ -385,8 +385,8 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="231"/>
-        <source>Show information about SuperTurbostake</source>
-        <translation>Afficher des informations à propos de SuperTurbostake</translation>
+        <source>Show information about Heirloom</source>
+        <translation>Afficher des informations à propos de Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="233"/>
@@ -405,18 +405,18 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="237"/>
-        <source>Modify configuration options for SuperTurbostake</source>
-        <translation>Modifier les options de configuration pour SuperTurbostake</translation>
+        <source>Modify configuration options for Heirloom</source>
+        <translation>Modifier les options de configuration pour Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="239"/>
-        <source>Open &amp;SuperTurbostake</source>
-        <translation>Ouvrir &amp;SuperTurbostake</translation>
+        <source>Open &amp;Heirloom</source>
+        <translation>Ouvrir &amp;Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="240"/>
-        <source>Show the SuperTurbostake window</source>
-        <translation>Afficher la fenêtre de SuperTurbostake</translation>
+        <source>Show the Heirloom window</source>
+        <translation>Afficher la fenêtre de Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="241"/>
@@ -490,13 +490,13 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="407"/>
-        <source>SuperTurbostake-qt</source>
-        <translation>SuperTurbostake-qt</translation>
+        <source>Heirloom-qt</source>
+        <translation>Heirloom-qt</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="449"/>
-        <source>%n active connection(s) to SuperTurbostake network</source>
-        <translation><numerusform>%n connexion active avec le réseau SuperTurbostake</numerusform><numerusform>%n connexions actives avec le réseau SuperTurbostake</numerusform></translation>
+        <source>%n active connection(s) to Heirloom network</source>
+        <translation><numerusform>%n connexion active avec le réseau Heirloom</numerusform><numerusform>%n connexions actives avec le réseau Heirloom</numerusform></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="475"/>
@@ -679,8 +679,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid SuperTurbostake address.</source>
-        <translation>L&apos;adresse fournie « %1 » n&apos;est pas une adresse SuperTurbostake valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Heirloom address.</source>
+        <translation>L&apos;adresse fournie « %1 » n&apos;est pas une adresse Heirloom valide.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
@@ -697,13 +697,13 @@ Adresse : %4
     <name>MainOptionsPage</name>
     <message>
         <location filename="../optionsdialog.cpp" line="170"/>
-        <source>&amp;Start SuperTurbostake on window system startup</source>
-        <translation>&amp;Démarrer SuperTurbostake avec le système de fenêtres</translation>
+        <source>&amp;Start Heirloom on window system startup</source>
+        <translation>&amp;Démarrer Heirloom avec le système de fenêtres</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="171"/>
-        <source>Automatically start SuperTurbostake after the computer is turned on</source>
-        <translation>Lancer automatiquement SuperTurbostake lorsque l&apos;ordinateur est allumé</translation>
+        <source>Automatically start Heirloom after the computer is turned on</source>
+        <translation>Lancer automatiquement Heirloom lorsque l&apos;ordinateur est allumé</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="175"/>
@@ -722,8 +722,8 @@ Adresse : %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="181"/>
-        <source>Automatically open the SuperTurbostake client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client SuperTurbostake automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l&apos;UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Heirloom client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Heirloom automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l&apos;UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="185"/>
@@ -743,7 +743,7 @@ Adresse : %4
     <message>
         <location filename="../optionsdialog.cpp" line="191"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>Connexion au réseau SuperTurbostake à travers un proxy SOCKS4 (par ex. lors d&apos;une connexion via Tor)</translation>
+        <translation>Connexion au réseau Heirloom à travers un proxy SOCKS4 (par ex. lors d&apos;une connexion via Tor)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="196"/>
@@ -1183,8 +1183,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="25"/>
-        <source>Enter a SuperTurbostake address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Entez une adresse SuperTurbostake (par ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a Heirloom address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Entez une adresse Heirloom (par ex. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1632,11 +1632,11 @@ p, li { white-space: pre-wrap; }
     </message>
 </context>
 <context>
-    <name>SuperTurbostake-core</name>
+    <name>Heirloom-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="3"/>
-        <source>SuperTurbostake version</source>
-        <translation>Version de SuperTurbostake</translation>
+        <source>Heirloom version</source>
+        <translation>Version de Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="4"/>
@@ -1665,8 +1665,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="9"/>
-        <source>Specify configuration file (default: SuperTurbostake.conf)</source>
-        <translation>Spécifier le fichier de configuration (par défaut : SuperTurbostake.conf)</translation>
+        <source>Specify configuration file (default: Heirloom.conf)</source>
+        <translation>Spécifier le fichier de configuration (par défaut : Heirloom.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="10"/>
@@ -1846,9 +1846,9 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../bitcoinstrings.cpp" line="47"/>
         <source>
-SSL options: (see the SuperTurbostake Wiki for SSL setup instructions)</source>
+SSL options: (see the Heirloom Wiki for SSL setup instructions)</source>
         <translation>
-Options SSL : (cf. le wiki SuperTurbostake pour les réglages SSL)</translation>
+Options SSL : (cf. le wiki Heirloom pour les réglages SSL)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="50"/>
@@ -1877,8 +1877,8 @@ Options SSL : (cf. le wiki SuperTurbostake pour les réglages SSL)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="57"/>
-        <source>Cannot obtain a lock on data directory %s.  SuperTurbostake is probably already running.</source>
-        <translation>Impossible d&apos;obtenir un verrou sur le répertoire de données %s.  SuperTurbostake fonctionne probablement déjà.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Heirloom is probably already running.</source>
+        <translation>Impossible d&apos;obtenir un verrou sur le répertoire de données %s.  Heirloom fonctionne probablement déjà.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="60"/>
@@ -1902,13 +1902,13 @@ Options SSL : (cf. le wiki SuperTurbostake pour les réglages SSL)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="66"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SuperTurbostake</source>
-        <translation>Erreur lors du chargement de wallet.dat : le porte-monnaie nécessite une version plus récente de SuperTurbostake</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Heirloom</source>
+        <translation>Erreur lors du chargement de wallet.dat : le porte-monnaie nécessite une version plus récente de Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="67"/>
-        <source>Wallet needed to be rewritten: restart SuperTurbostake to complete</source>
-        <translation>Le porte-monnaie nécessitait une réécriture. Veuillez redémarrer SuperTurbostake pour terminer l&apos;opération</translation>
+        <source>Wallet needed to be rewritten: restart Heirloom to complete</source>
+        <translation>Le porte-monnaie nécessitait une réécriture. Veuillez redémarrer Heirloom pour terminer l&apos;opération</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="68"/>
@@ -1962,13 +1962,13 @@ Options SSL : (cf. le wiki SuperTurbostake pour les réglages SSL)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
-        <source>Unable to bind to port %d on this computer.  SuperTurbostake is probably already running.</source>
-        <translation>Impossible de s&apos;attacher au port %d sur cet ordinateur.  SuperTurbostake fonctionne probablement déjà.</translation>
+        <source>Unable to bind to port %d on this computer.  Heirloom is probably already running.</source>
+        <translation>Impossible de s&apos;attacher au port %d sur cet ordinateur.  Heirloom fonctionne probablement déjà.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong SuperTurbostake will not work properly.</source>
-        <translation>Attention : veuillez vérifier que l&apos;heure et la date de votre ordinateur sont corrects.  Si votre horloge n&apos;est pas à l&apos;heure, SuperTurbostake ne fonctionnera pas correctement.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Heirloom will not work properly.</source>
+        <translation>Attention : veuillez vérifier que l&apos;heure et la date de votre ordinateur sont corrects.  Si votre horloge n&apos;est pas à l&apos;heure, Heirloom ne fonctionnera pas correctement.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="84"/>

@@ -6,23 +6,23 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SuperTurbostake</source>
-        <translation>Tentang SuperTurbostake</translation>
+        <source>About Heirloom</source>
+        <translation>Tentang Heirloom</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="75"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="113"/>
-        <source>Copyright © 2014 SuperTurbostake Developers</source>
-        <translation>Copyright © 2014 SuperTurbostake Developers</translation>
+        <source>Copyright © 2014 Heirloom Developers</source>
+        <translation>Copyright © 2014 Heirloom Developers</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="120"/>
-        <source>Copyright © 2011-2014 SuperTurbostake Developers</source>
-        <translation>Copyright © 2011-2014 SuperTurbostake Developers</translation>
+        <source>Copyright © 2011-2014 Heirloom Developers</source>
+        <translation>Copyright © 2011-2014 Heirloom Developers</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="133"/>
@@ -48,8 +48,8 @@ Produk ini berisi software yang dikembangkan oleh OpenSSL Project untuk digunaka
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SuperTurbostake addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Ini adalah alamat SuperTurbostake Anda untuk menerima pembayaran. Anda mungkin ingin memberikan yang berbeda untuk masing-masing pengirim sehingga Anda dapat melacak siapa yang membayar Anda.</translation>
+        <source>These are your Heirloom addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Ini adalah alamat Heirloom Anda untuk menerima pembayaran. Anda mungkin ingin memberikan yang berbeda untuk masing-masing pengirim sehingga Anda dapat melacak siapa yang membayar Anda.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="33"/>
@@ -266,8 +266,8 @@ Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>SuperTurbostake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
-        <translation>SuperTurbostake akan menutup sekarang untuk menyelesaikan proses enkripsi. Ingat bahwa mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi SuperTurbostakes Anda dari yang dicuri oleh malware menginfeksi komputer Anda.</translation>
+        <source>Heirloom will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
+        <translation>Heirloom akan menutup sekarang untuk menyelesaikan proses enkripsi. Ingat bahwa mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi SuperTurbostakes Anda dari yang dicuri oleh malware menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
@@ -382,8 +382,8 @@ Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="254"/>
-        <source>Show information about SuperTurbostake</source>
-        <translation>Tampilkan informasi tentang SuperTurbostake</translation>
+        <source>Show information about Heirloom</source>
+        <translation>Tampilkan informasi tentang Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
@@ -497,38 +497,38 @@ Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="76"/>
-        <source>SuperTurbostake Wallet</source>
-        <translation>Dompet SuperTurbostake</translation>
+        <source>Heirloom Wallet</source>
+        <translation>Dompet Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="222"/>
-        <source>Send coins to a SuperTurbostake address</source>
-        <translation>Kirim koin ke alamat SuperTurbostake</translation>
+        <source>Send coins to a Heirloom address</source>
+        <translation>Kirim koin ke alamat Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>&amp;About SuperTurbostake</source>
-        <translation>Tentang SuperTurbostake</translation>
+        <source>&amp;About Heirloom</source>
+        <translation>Tentang Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="260"/>
-        <source>Modify configuration options for SuperTurbostake</source>
-        <translation>Memodifikasi pilihan konfigurasi untuk SuperTurbostake</translation>
+        <source>Modify configuration options for Heirloom</source>
+        <translation>Memodifikasi pilihan konfigurasi untuk Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="262"/>
-        <source>Show/Hide &amp;SuperTurbostake</source>
-        <translation>Tampilkan/Sembunyikan SuperTurbostake</translation>
+        <source>Show/Hide &amp;Heirloom</source>
+        <translation>Tampilkan/Sembunyikan Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="263"/>
-        <source>Show or hide the SuperTurbostake window</source>
-        <translation>Tampilkan atau sembunyikan jendela SuperTurbostake</translation>
+        <source>Show or hide the Heirloom window</source>
+        <translation>Tampilkan atau sembunyikan jendela Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="415"/>
-        <source>SuperTurbostake client</source>
-        <translation>Klien SuperTurbostake</translation>
+        <source>Heirloom client</source>
+        <translation>Klien Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="443"/>
@@ -537,7 +537,7 @@ Apakah Anda yakin ingin mengenkripsi dompet Anda?</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="507"/>
-        <source>%n active connection(s) to SuperTurbostake network</source>
+        <source>%n active connection(s) to Heirloom network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
         </translation>
@@ -671,8 +671,8 @@ Alamat: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="128"/>
-        <source>A fatal error occured. SuperTurbostake can no longer continue safely and will quit.</source>
-        <translation>Sebuah error fatal terjadi. SuperTurbostake tidak bisa lagi melanjutkan dengan aman dan akan berhenti.</translation>
+        <source>A fatal error occured. Heirloom can no longer continue safely and will quit.</source>
+        <translation>Sebuah error fatal terjadi. Heirloom tidak bisa lagi melanjutkan dengan aman dan akan berhenti.</translation>
     </message>
 </context>
 <context>
@@ -970,8 +970,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="287"/>
-        <source>Whether to show SuperTurbostake addresses in the transaction list</source>
-        <translation>Apakah menampilkan alamat SuperTurbostake dalam daftar transaksi</translation>
+        <source>Whether to show Heirloom addresses in the transaction list</source>
+        <translation>Apakah menampilkan alamat Heirloom dalam daftar transaksi</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="290"/>
@@ -1038,8 +1038,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid SuperTurbostake address.</source>
-        <translation>Alamat yang di masukkan &quot;%1&quot; tidak berlaku di alamat SuperTurbostake</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Heirloom address.</source>
+        <translation>Alamat yang di masukkan &quot;%1&quot; tidak berlaku di alamat Heirloom</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
@@ -1081,8 +1081,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="187"/>
-        <source>Automatically open the SuperTurbostake client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Secara otomatis membuka port klien SuperTurbostake pada router. Ini hanya bekerja ketika router Anda mendukung UPnP dan diaktifkan.</translation>
+        <source>Automatically open the Heirloom client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Secara otomatis membuka port klien Heirloom pada router. Ini hanya bekerja ketika router Anda mendukung UPnP dan diaktifkan.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="190"/>
@@ -1116,8 +1116,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 STRB fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
-        <translation>Biaya transaksi jaringan Wajib per kB ditransfer. Kebanyakan transaksi 1 kB dan dikenakan biaya 0.01 STRB. Catatan: Ukuran Transfer dapat meningkatkan tergantung pada jumlah transaksi input yang diperlukan untuk ditambahkan bersama-sama untuk mendanai pembayaran.</translation>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 HEIR fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <translation>Biaya transaksi jaringan Wajib per kB ditransfer. Kebanyakan transaksi 1 kB dan dikenakan biaya 0.01 HEIR. Catatan: Ukuran Transfer dapat meningkatkan tergantung pada jumlah transaksi input yang diperlukan untuk ditambahkan bersama-sama untuk mendanai pembayaran.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -1136,13 +1136,13 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="172"/>
-        <source>&amp;Start SuperTurbostake on window system startup</source>
-        <translation>Mulai SuperTurbostake pada sistem jendela startup</translation>
+        <source>&amp;Start Heirloom on window system startup</source>
+        <translation>Mulai Heirloom pada sistem jendela startup</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="173"/>
-        <source>Automatically start SuperTurbostake after the computer is turned on</source>
-        <translation>Otomatis mulai SuperTurbostake setelah komputer dihidupkan</translation>
+        <source>Automatically start Heirloom after the computer is turned on</source>
+        <translation>Otomatis mulai Heirloom setelah komputer dihidupkan</translation>
     </message>
 </context>
 <context>
@@ -1426,8 +1426,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>STRB</source>
-        <translation>STRB</translation>
+        <source>HEIR</source>
+        <translation>HEIR</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>
@@ -1469,8 +1469,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>SuperTurbostake (SuperTurbostake) debug window</source>
-        <translation>SuperTurbostake (SuperTurbostake) jendela debug</translation>
+        <source>Heirloom (Heirloom) debug window</source>
+        <translation>Heirloom (Heirloom) jendela debug</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="24"/>
@@ -1561,8 +1561,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="306"/>
-        <source>Welcome to the SuperTurbostake RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Selamat datang di konsol SuperTurbostake RPC. &lt;br&gt;Gunakan panah atas dan bawah untuk menavigasi sejarah, dan &lt;b&gt;Ctrl-L&lt;/b&gt; untuk menghapus layar. &lt;br&gt;Type &lt;b&gt;help&lt;/b&gt;  untuk overview command yang tersedia.</translation>
+        <source>Welcome to the Heirloom RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Selamat datang di konsol Heirloom RPC. &lt;br&gt;Gunakan panah atas dan bawah untuk menavigasi sejarah, dan &lt;b&gt;Ctrl-L&lt;/b&gt; untuk menghapus layar. &lt;br&gt;Type &lt;b&gt;help&lt;/b&gt;  untuk overview command yang tersedia.</translation>
     </message>
 </context>
 <context>
@@ -1795,8 +1795,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="36"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Masukkan alamat SuperTurbostake</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Masukkan alamat Heirloom</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="177"/>
@@ -1884,8 +1884,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="25"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Masukkan alamat SuperTurbostake</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Masukkan alamat Heirloom</translation>
     </message>
 </context>
 <context>
@@ -1949,8 +1949,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="152"/>
-        <source>Sign the message to prove you own this SuperTurbostake address</source>
-        <translation>Masuk pesan untuk membuktikan bahwa Anda sudah memiliki alamat SuperTurbostake ini</translation>
+        <source>Sign the message to prove you own this Heirloom address</source>
+        <translation>Masuk pesan untuk membuktikan bahwa Anda sudah memiliki alamat Heirloom ini</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="155"/>
@@ -1985,8 +1985,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="295"/>
-        <source>Verify the message to ensure it was signed with the specified SuperTurbostake address</source>
-        <translation>Verifikasi pesan untuk memastikan ditandatangani dengan alamati SuperTurbostake yang ditentukan</translation>
+        <source>Verify the message to ensure it was signed with the specified Heirloom address</source>
+        <translation>Verifikasi pesan untuk memastikan ditandatangani dengan alamati Heirloom yang ditentukan</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="298"/>
@@ -2011,8 +2011,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="31"/>
         <location filename="../signverifymessagedialog.cpp" line="32"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Masukkan alamat SuperTurbostake</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Masukkan alamat Heirloom</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="115"/>
@@ -2568,13 +2568,13 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="8"/>
-        <source>Unable to bind to port %d on this computer.  SuperTurbostake is probably already running.</source>
-        <translation>Tidak dapat mengikat ke port %d di komputer ini. SuperTurbostake mungkin sudah berjalan.</translation>
+        <source>Unable to bind to port %d on this computer.  Heirloom is probably already running.</source>
+        <translation>Tidak dapat mengikat ke port %d di komputer ini. Heirloom mungkin sudah berjalan.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="12"/>
-        <source>SuperTurbostake version</source>
-        <translation>Versi SuperTurbostake</translation>
+        <source>Heirloom version</source>
+        <translation>Versi Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="14"/>
@@ -2598,8 +2598,8 @@ Ini berarti diperlukan biaya minimal %2.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="18"/>
-        <source>Specify configuration file (default: SuperTurbostake.conf)</source>
-        <translation>File konfigurasi ditentukan (default: SuperTurbostake.conf)</translation>
+        <source>Specify configuration file (default: Heirloom.conf)</source>
+        <translation>File konfigurasi ditentukan (default: Heirloom.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="19"/>
@@ -2859,23 +2859,23 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
-        <source>Cannot obtain a lock on data directory %s.  SuperTurbostake is probably already running.</source>
-        <translation>Tidak dapat memperoleh kunci pada direktori data %s. SuperTurbostake mungkin sudah berjalan.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Heirloom is probably already running.</source>
+        <translation>Tidak dapat memperoleh kunci pada direktori data %s. Heirloom mungkin sudah berjalan.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>
-        <source>SuperTurbostake</source>
-        <translation>SuperTurbostake</translation>
+        <source>Heirloom</source>
+        <translation>Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="88"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SuperTurbostake</source>
-        <translation>Error loading wallet.dat: Dompet memerlukan versi terbaru dari SuperTurbostake</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Heirloom</source>
+        <translation>Error loading wallet.dat: Dompet memerlukan versi terbaru dari Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="89"/>
-        <source>Wallet needed to be rewritten: restart SuperTurbostake to complete</source>
-        <translation>Dompet perlu ditulis ulang: me-restart SuperTurbostake untuk menyelesaikan</translation>
+        <source>Wallet needed to be rewritten: restart Heirloom to complete</source>
+        <translation>Dompet perlu ditulis ulang: me-restart Heirloom untuk menyelesaikan</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
@@ -2891,8 +2891,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="119"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong SuperTurbostake will not work properly.</source>
-        <translation>Peringatan: Harap periksa tanggal komputer Anda dan waktu sudah benar. Jika jam Anda salah SuperTurbostake tidak akan berfungsi.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Heirloom will not work properly.</source>
+        <translation>Peringatan: Harap periksa tanggal komputer Anda dan waktu sudah benar. Jika jam Anda salah Heirloom tidak akan berfungsi.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="82"/>

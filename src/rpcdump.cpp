@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 Bitcoin Developers
-// Copyright (c) 2012-2013 The SuperTurbostake developers
+// Copyright (c) 2012-2013 The Heirloom developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -57,7 +57,7 @@ Value importprivkey(const Array& params, bool fHelp)
     if (!fGood) throw JSONRPCError(-5,"Invalid private key");
     if (pwalletMain->IsLocked())
         throw JSONRPCError(-13, "Error: Please enter the wallet passphrase with walletpassphrase first.");
-    if (fWalletUnlockMintOnly) // SuperTurbostake: no importprivkey in mint-only mode
+    if (fWalletUnlockMintOnly) // Heirloom: no importprivkey in mint-only mode
         throw JSONRPCError(-102, "Wallet is unlocked for minting only.");
 
     CKey key;
@@ -93,10 +93,10 @@ Value dumpprivkey(const Array& params, bool fHelp)
     string strAddress = params[0].get_str();
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(-5, "Invalid SuperTurbostake address");
+        throw JSONRPCError(-5, "Invalid Heirloom address");
     if (pwalletMain->IsLocked())
         throw JSONRPCError(-13, "Error: Please enter the wallet passphrase with walletpassphrase first.");
-    if (fWalletUnlockMintOnly) // SuperTurbostake: no dumpprivkey in mint-only mode
+    if (fWalletUnlockMintOnly) // Heirloom: no dumpprivkey in mint-only mode
         throw JSONRPCError(-102, "Wallet is unlocked for minting only.");
     CKeyID keyID;
     if (!address.GetKeyID(keyID))

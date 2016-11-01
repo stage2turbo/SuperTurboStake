@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2013 The SuperTurbostake developers
+// Copyright (c) 2011-2013 The Heirloom developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include "db.h"
@@ -75,7 +75,7 @@ void Shutdown(void* parg)
         delete pwalletMain;
         CreateThread(ExitTimeout, NULL);
         Sleep(50);
-        printf("SuperTurbostake exiting\n\n");
+        printf("Heirloom exiting\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non UI client get's exited here, but let Bitcoin-Qt reach return 0; in bitcoin.cpp
@@ -141,7 +141,7 @@ bool static Bind(const CService &addr) {
     std::string strError;
     if (!BindListenPort(addr, strError))
     {
-        ThreadSafeMessageBox(strError, _("SuperTurbostake"), wxOK | wxMODAL);
+        ThreadSafeMessageBox(strError, _("Heirloom"), wxOK | wxMODAL);
         return false;
     }
     return true;
@@ -189,14 +189,14 @@ bool AppInit2(int argc, char* argv[])
     if (mapArgs.count("-?") || mapArgs.count("--help"))
     {
         string strUsage = string() +
-          _("SuperTurbostake version") + " " + FormatFullVersion() + "\n\n" +
+          _("Heirloom version") + " " + FormatFullVersion() + "\n\n" +
           _("Usage:") + "\t\t\t\t\t\t\t\t\t\t\n" +
             "  SuperTurbostaked [options]                   \t  " + "\n" +
             "  SuperTurbostaked [options] <command> [params]\t  " + _("Send command to -server or SuperTurbostaked") + "\n" +
             "  SuperTurbostaked [options] help              \t\t  " + _("List commands") + "\n" +
             "  SuperTurbostaked [options] help <command>    \t\t  " + _("Get help for a command") + "\n" +
           _("Options:") + "\n" +
-            "  -conf=<file>     \t\t  " + _("Specify configuration file (default: SuperTurbostake.conf)") + "\n" +
+            "  -conf=<file>     \t\t  " + _("Specify configuration file (default: Heirloom.conf)") + "\n" +
             "  -pid=<file>      \t\t  " + _("Specify pid file (default: SuperTurbostaked.pid)") + "\n" +
             "  -gen             \t\t  " + _("Generate coins") + "\n" +
             "  -gen=0           \t\t  " + _("Don't generate coins") + "\n" +
@@ -265,7 +265,7 @@ bool AppInit2(int argc, char* argv[])
             "  -checklevel=<n>  \t\t  " + _("How thorough the block verification is (0-6, default: 1)") + "\n";
 
         strUsage += string() +
-            _("\nSSL options: (see the SuperTurbostake Wiki for SSL setup instructions)") + "\n" +
+            _("\nSSL options: (see the Heirloom Wiki for SSL setup instructions)") + "\n" +
             "  -rpcssl                                \t  " + _("Use OpenSSL (https) for JSON-RPC connections") + "\n" +
             "  -rpcsslcertificatechainfile=<file.cert>\t  " + _("Server certificate file (default: server.cert)") + "\n" +
             "  -rpcsslprivatekeyfile=<file.pem>       \t  " + _("Server private key (default: server.pem)") + "\n" +
@@ -315,7 +315,7 @@ bool AppInit2(int argc, char* argv[])
 
 #ifndef QT_GUI
     for (int i = 1; i < argc; i++)
-        if (!IsSwitchChar(argv[i][0]) && !(strlen(argv[i]) >= 7 && strncasecmp(argv[i], "SuperTurbostake:", 7) == 0))
+        if (!IsSwitchChar(argv[i][0]) && !(strlen(argv[i]) >= 7 && strncasecmp(argv[i], "Heirloom:", 7) == 0))
             fCommandLine = true;
 
     if (fCommandLine)
@@ -350,7 +350,7 @@ bool AppInit2(int argc, char* argv[])
     if (!fDebug)
         ShrinkDebugFile();
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    printf("SuperTurbostake version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    printf("Heirloom version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     printf("Default data directory %s\n", GetDefaultDataDir().string().c_str());
 
     if (GetBoolArg("-loadblockindextest"))
@@ -368,7 +368,7 @@ bool AppInit2(int argc, char* argv[])
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
     {
-        ThreadSafeMessageBox(strprintf(_("Cannot obtain a lock on data directory %s.  SuperTurbostake is probably already running."), GetDataDir().string().c_str()), _("SuperTurbostake"), wxOK|wxMODAL);
+        ThreadSafeMessageBox(strprintf(_("Cannot obtain a lock on data directory %s.  Heirloom is probably already running."), GetDataDir().string().c_str()), _("Heirloom"), wxOK|wxMODAL);
         return false;
     }
 
@@ -377,7 +377,7 @@ bool AppInit2(int argc, char* argv[])
     // Load data files
     //
     if (fDaemon)
-        fprintf(stdout, "SuperTurbostake server starting\n");
+        fprintf(stdout, "Heirloom server starting\n");
     int64 nStart;
 
     InitMessage(_("Loading addresses..."));
@@ -414,12 +414,12 @@ bool AppInit2(int argc, char* argv[])
         if (nLoadWalletRet == DB_CORRUPT)
             strErrors << _("Error loading wallet.dat: Wallet corrupted") << "\n";
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading wallet.dat: Wallet requires newer version of SuperTurbostake") << "\n";
+            strErrors << _("Error loading wallet.dat: Wallet requires newer version of Heirloom") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
-            strErrors << _("Wallet needed to be rewritten: restart SuperTurbostake to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart Heirloom to complete") << "\n";
             printf("%s", strErrors.str().c_str());
-            ThreadSafeMessageBox(strErrors.str(), _("SuperTurbostake"), wxOK | wxICON_ERROR | wxMODAL);
+            ThreadSafeMessageBox(strErrors.str(), _("Heirloom"), wxOK | wxICON_ERROR | wxMODAL);
             return false;
         }
         else
@@ -491,7 +491,7 @@ bool AppInit2(int argc, char* argv[])
 
     if (!strErrors.str().empty())
     {
-        ThreadSafeMessageBox(strErrors.str(), _("SuperTurbostake"), wxOK | wxICON_ERROR | wxMODAL);
+        ThreadSafeMessageBox(strErrors.str(), _("Heirloom"), wxOK | wxICON_ERROR | wxMODAL);
         return false;
     }
 
@@ -547,7 +547,7 @@ bool AppInit2(int argc, char* argv[])
         addrProxy = CService(mapArgs["-proxy"], 9050);
         if (!addrProxy.IsValid())
         {
-            ThreadSafeMessageBox(_("Invalid -proxy address"), _("SuperTurbostake"), wxOK | wxMODAL);
+            ThreadSafeMessageBox(_("Invalid -proxy address"), _("Heirloom"), wxOK | wxMODAL);
             return false;
         }
     }
@@ -557,7 +557,7 @@ bool AppInit2(int argc, char* argv[])
         BOOST_FOREACH(std::string snet, mapMultiArgs["-noproxy"]) {
             enum Network net = ParseNetwork(snet);
             if (net == NET_UNROUTABLE) {
-                ThreadSafeMessageBox(_("Unknown network specified in -noproxy"), _("SuperTurbostake"), wxOK | wxMODAL);
+                ThreadSafeMessageBox(_("Unknown network specified in -noproxy"), _("Heirloom"), wxOK | wxMODAL);
                 return false;
             }
             SetNoProxy(net);
@@ -590,7 +590,7 @@ bool AppInit2(int argc, char* argv[])
         BOOST_FOREACH(std::string snet, mapMultiArgs["-onlynet"]) {
             enum Network net = ParseNetwork(snet);
             if (net == NET_UNROUTABLE) {
-                ThreadSafeMessageBox(_("Unknown network specified in -onlynet"), _("SuperTurbostake"), wxOK | wxMODAL);
+                ThreadSafeMessageBox(_("Unknown network specified in -onlynet"), _("Heirloom"), wxOK | wxMODAL);
                 return false;
             }
             nets.insert(net);
@@ -648,27 +648,27 @@ bool AppInit2(int argc, char* argv[])
     {
         if (!ParseMoney(mapArgs["-paytxfee"], nTransactionFee) || nTransactionFee < MIN_TX_FEE)
         {
-            ThreadSafeMessageBox(_("Invalid amount for -paytxfee=<amount>"), _("SuperTurbostake"), wxOK | wxMODAL);
+            ThreadSafeMessageBox(_("Invalid amount for -paytxfee=<amount>"), _("Heirloom"), wxOK | wxMODAL);
             return false;
         }
         if (nTransactionFee > 0.25 * COIN)
-            ThreadSafeMessageBox(_("Warning: -paytxfee is set very high.  This is the transaction fee you will pay if you send a transaction."), _("SuperTurbostake"), wxOK | wxICON_EXCLAMATION | wxMODAL);
+            ThreadSafeMessageBox(_("Warning: -paytxfee is set very high.  This is the transaction fee you will pay if you send a transaction."), _("Heirloom"), wxOK | wxICON_EXCLAMATION | wxMODAL);
     }
 
-    if (mapArgs.count("-reservebalance")) // SuperTurbostake: reserve balance amount
+    if (mapArgs.count("-reservebalance")) // Heirloom: reserve balance amount
     {
         int64 nReserveBalance = 0;
         if (!ParseMoney(mapArgs["-reservebalance"], nReserveBalance))
         {
-            ThreadSafeMessageBox(_("Invalid amount for -reservebalance=<amount>"), _("SuperTurbostake"), wxOK | wxMODAL);
+            ThreadSafeMessageBox(_("Invalid amount for -reservebalance=<amount>"), _("Heirloom"), wxOK | wxMODAL);
             return false;
         }
     }
 
-    if (mapArgs.count("-checkpointkey")) // SuperTurbostake: checkpoint master priv key
+    if (mapArgs.count("-checkpointkey")) // Heirloom: checkpoint master priv key
     {
         if (!Checkpoints::SetCheckpointPrivKey(GetArg("-checkpointkey", "")))
-            ThreadSafeMessageBox(_("Unable to sign checkpoint, wrong checkpointkey?\n"), _("SuperTurbostake"), wxOK | wxMODAL);
+            ThreadSafeMessageBox(_("Unable to sign checkpoint, wrong checkpointkey?\n"), _("Heirloom"), wxOK | wxMODAL);
     }
 
     //
@@ -680,7 +680,7 @@ bool AppInit2(int argc, char* argv[])
     RandAddSeedPerfmon();
 
     if (!CreateThread(StartNode, NULL))
-        ThreadSafeMessageBox(_("Error: CreateThread(StartNode) failed"), _("SuperTurbostake"), wxOK | wxMODAL);
+        ThreadSafeMessageBox(_("Error: CreateThread(StartNode) failed"), _("Heirloom"), wxOK | wxMODAL);
 
     if (fServer)
         CreateThread(ThreadRPCServer, NULL);

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2013 The Peercoin developers
 // Copyright (c) 2015 The Turbostake Developers
-// Copyright (c) 2015 The SuperTurbostake Developers
+// Copyright (c) 2015 The Heirloom Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -60,7 +60,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "SuperTurbostake Signed Message:\n";
+const string strMessageMagic = "Heirloom Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -124,7 +124,7 @@ void SyncWithWallets(const CTransaction& tx, const CBlock* pblock, bool fUpdate,
 {
     if (!fConnect)
     {
-        // SuperTurbostake: wallets need to refund inputs when disconnecting coinstake
+        // Heirloom: wallets need to refund inputs when disconnecting coinstake
         if (tx.IsCoinStake())
         {
             BOOST_FOREACH(CWallet* pwallet, setpwalletRegistered)
@@ -473,7 +473,7 @@ bool CTransaction::CheckTransaction() const
         const CTxOut& txout = vout[i];
         if (txout.IsEmpty() && (!IsCoinBase()) && (!IsCoinStake()))
             return DoS(100, error("CTransaction::CheckTransaction() : txout empty for user transaction"));
-        // SuperTurbostake: enforce minimum output amount
+        // Heirloom: enforce minimum output amount
         if ((!txout.IsEmpty()) && txout.nValue < MIN_TXOUT_AMOUNT)
             return DoS(100, error("CTransaction::CheckTransaction() : txout.nValue below minimum"));
         if (txout.nValue > MAX_MONEY)
@@ -566,7 +566,7 @@ bool CTxMemPool::accept(CTxDB& txdb, CTransaction &tx, bool fCheckInputs,
     // Coinbase is only valid in a block, not as a loose transaction
     if (tx.IsCoinBase())
         return tx.DoS(100, error("CTxMemPool::accept() : coinbase as individual tx"));
-    // SuperTurbostake: coinstake is also only valid in a block, not as a loose transaction
+    // Heirloom: coinstake is also only valid in a block, not as a loose transaction
     if (tx.IsCoinStake())
         return tx.DoS(100, error("CTxMemPool::accept() : coinstake as individual tx"));
 
@@ -928,7 +928,7 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
     return pblock->GetHash();
 }
 
-// SuperTurbostake: find block wanted by given orphan block
+// Heirloom: find block wanted by given orphan block
 uint256 WantedByOrphan(const CBlock* pblockOrphan)
 {
     // Work back to the first block in the orphan chain
@@ -945,7 +945,7 @@ int64 GetProofOfWorkReward(unsigned int nBits)
     CBigNum bnTargetLimit = bnProofOfWorkLimit;
     bnTargetLimit.SetCompact(bnTargetLimit.GetCompact());
 
-    // SuperTurbostake: subsidy is cut in half every 16x multiply of difficulty
+    // Heirloom: subsidy is cut in half every 16x multiply of difficulty
     // A reasonably continuous curve is used to avoid shock to market
     // (nSubsidyLimit / nSubsidy) ** 4 == bnProofOfWorkLimit / bnTarget
     CBigNum bnLowerBound = CENT;
@@ -969,7 +969,7 @@ int64 GetProofOfWorkReward(unsigned int nBits)
     return min(nSubsidy, MAX_MINT_PROOF_OF_WORK);
 }
 
-// SuperTurbostake: miner's coin stake is rewarded based on coin age spent (coin-days)
+// Heirloom: miner's coin stake is rewarded based on coin age spent (coin-days)
 int64 GetProofOfStakeReward(int64 nCoinAge)
 {
     static int64 nRewardCoinYear = 50 * CENT;  // creation amount per coin-year
@@ -1004,7 +1004,7 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     return bnResult.GetCompact();
 }
 
-// SuperTurbostake: find last block index up to pindex
+// Heirloom: find last block index up to pindex
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake)
 {
     while (pindex && pindex->pprev && (pindex->IsProofOfStake() != fProofOfStake))
@@ -1026,8 +1026,8 @@ unsigned int static GetNextTargetRequired(const CBlockIndex* pindexLast, bool fP
 
     int64 nActualSpacing = pindexPrev->GetBlockTime() - pindexPrevPrev->GetBlockTime();
 
-    // SuperTurbostake: target change every block
-    // SuperTurbostake: retarget with exponential moving toward target spacing
+    // Heirloom: target change every block
+    // Heirloom: retarget with exponential moving toward target spacing
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
     int64 nTargetSpacing = fProofOfStake? STAKE_TARGET_SPACING : min(nTargetSpacingWorkMax, (int64) STAKE_TARGET_SPACING * (1 + pindexLast->nHeight - pindexPrev->nHeight));
@@ -1088,7 +1088,7 @@ void static InvalidChainFound(CBlockIndex* pindexNew)
     }
     printf("InvalidChainFound: invalid block=%s  height=%d  trust=%s\n", pindexNew->GetBlockHash().ToString().substr(0,20).c_str(), pindexNew->nHeight, CBigNum(pindexNew->bnChainTrust).ToString().c_str());
     printf("InvalidChainFound:  current best=%s  height=%d  trust=%s\n", hashBestChain.ToString().substr(0,20).c_str(), nBestHeight, CBigNum(bnBestChainTrust).ToString().c_str());
-    // SuperTurbostake: should not enter safe mode for longer invalid chain
+    // Heirloom: should not enter safe mode for longer invalid chain
 }
 
 void CBlock::UpdateTime(const CBlockIndex* pindexPrev)
@@ -1287,7 +1287,7 @@ bool CTransaction::ConnectInputs(CTxDB& txdb, MapPrevTx inputs,
                     if (pindex->nBlockPos == txindex.pos.nBlockPos && pindex->nFile == txindex.pos.nFile)
                         return error("ConnectInputs() : tried to spend coinbase/coinstake at depth %d", pindexBlock->nHeight - pindex->nHeight);
 
-            // SuperTurbostake: check transaction timestamp
+            // Heirloom: check transaction timestamp
             if (txPrev.nTime > nTime)
                 return DoS(100, error("ConnectInputs() : transaction timestamp earlier than input transaction"));
 
@@ -1342,7 +1342,7 @@ bool CTransaction::ConnectInputs(CTxDB& txdb, MapPrevTx inputs,
 
         if (IsCoinStake())
         {
-            // SuperTurbostake: coin stake tx earns reward instead of paying fee
+            // Heirloom: coin stake tx earns reward instead of paying fee
             uint64 nCoinAge;
             if (!GetCoinAge(txdb, nCoinAge))
                 return error("ConnectInputs() : %s unable to get coin age for coinstake", GetHash().ToString().substr(0,10).c_str());
@@ -1359,7 +1359,7 @@ bool CTransaction::ConnectInputs(CTxDB& txdb, MapPrevTx inputs,
             int64 nTxFee = nValueIn - GetValueOut();
             if (nTxFee < 0)
                 return DoS(100, error("ConnectInputs() : %s nTxFee < 0", GetHash().ToString().substr(0,10).c_str()));
-            // SuperTurbostake: enforce transaction fees for every block
+            // Heirloom: enforce transaction fees for every block
             if (nTxFee < GetMinFee())
                 return fBlock? DoS(100, error("ConnectInputs() : %s not paying required fee=%s, paid=%s", GetHash().ToString().substr(0,10).c_str(), FormatMoney(GetMinFee()).c_str(), FormatMoney(nTxFee).c_str())) : false;
             nFees += nTxFee;
@@ -1438,7 +1438,7 @@ bool CBlock::DisconnectBlock(CTxDB& txdb, CBlockIndex* pindex)
             return error("DisconnectBlock() : WriteBlockIndex failed");
     }
 
-    // SuperTurbostake: clean up wallet after disconnecting coinstake
+    // Heirloom: clean up wallet after disconnecting coinstake
     BOOST_FOREACH(CTransaction& tx, vtx)
         SyncWithWallets(tx, this, false, false);
 
@@ -1529,7 +1529,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex)
         mapQueuedChanges[tx.GetHash()] = CTxIndex(posThisTx, tx.vout.size());
     }
 
-    // SuperTurbostake: track money supply and mint amount info
+    // Heirloom: track money supply and mint amount info
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;
     if (!txdb.WriteBlockIndex(CDiskBlockIndex(pindex)))
@@ -1542,8 +1542,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex)
             return error("ConnectBlock() : UpdateTxIndex failed");
     }
 
-    // SuperTurbostake: fees are not collected by miners as in bitcoin
-    // SuperTurbostake: fees are destroyed to compensate the entire network
+    // Heirloom: fees are not collected by miners as in bitcoin
+    // Heirloom: fees are destroyed to compensate the entire network
     if (fDebug && GetBoolArg("-printcreation"))
         printf("ConnectBlock() : destroy=%s nFees=%"PRI64d"\n", FormatMoney(nFees).c_str(), nFees);
 
@@ -1781,7 +1781,7 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
 }
 
 
-// SuperTurbostake: total coin age spent in transaction, in the unit of coin-days.
+// Heirloom: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
 // might not find out about their coin age. Older transactions are 
@@ -1827,7 +1827,7 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, uint64& nCoinAge) const
     return true;
 }
 
-// SuperTurbostake: total coin age spent in block, in the unit of coin-days.
+// Heirloom: total coin age spent in block, in the unit of coin-days.
 bool CBlock::GetCoinAge(uint64& nCoinAge) const
 {
     nCoinAge = 0;
@@ -1870,14 +1870,14 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos)
         pindexNew->nHeight = pindexNew->pprev->nHeight + 1;
     }
 
-    // SuperTurbostake: compute chain trust score
+    // Heirloom: compute chain trust score
     pindexNew->bnChainTrust = (pindexNew->pprev ? pindexNew->pprev->bnChainTrust : 0) + pindexNew->GetBlockTrust();
 
-    // SuperTurbostake: compute stake entropy bit for stake modifier
+    // Heirloom: compute stake entropy bit for stake modifier
     if (!pindexNew->SetStakeEntropyBit(GetStakeEntropyBit()))
         return error("AddToBlockIndex() : SetStakeEntropyBit() failed");
 
-    // SuperTurbostake: record proof-of-stake hash value
+    // Heirloom: record proof-of-stake hash value
     if (pindexNew->IsProofOfStake())
     {
         if (!mapProofOfStake.count(hash))
@@ -1885,7 +1885,7 @@ bool CBlock::AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos)
         pindexNew->hashProofOfStake = mapProofOfStake[hash];
     }
 
-    // SuperTurbostake: compute stake modifier
+    // Heirloom: compute stake modifier
     uint64 nStakeModifier = 0;
     bool fGeneratedStakeModifier = false;
     if (!ComputeNextStakeModifier(pindexNew, nStakeModifier, fGeneratedStakeModifier))
@@ -1955,12 +1955,12 @@ bool CBlock::CheckBlock() const
         if (vtx[i].IsCoinBase())
             return DoS(100, error("CheckBlock() : more than one coinbase"));
 
-    // SuperTurbostake: only the second transaction can be the optional coinstake
+    // Heirloom: only the second transaction can be the optional coinstake
     for (int i = 2; i < vtx.size(); i++)
         if (vtx[i].IsCoinStake())
             return DoS(100, error("CheckBlock() : coinstake in wrong position"));
 
-    // SuperTurbostake: coinbase output should be empty if proof-of-stake block
+    // Heirloom: coinbase output should be empty if proof-of-stake block
     if (IsProofOfStake() && (vtx[0].vout.size() != 1 || !vtx[0].vout[0].IsEmpty()))
         return error("CheckBlock() : coinbase output not empty for proof-of-stake block");
 
@@ -1983,7 +1983,7 @@ bool CBlock::CheckBlock() const
     {
         if (!tx.CheckTransaction())
             return DoS(tx.nDoS, error("CheckBlock() : CheckTransaction failed"));
-        // SuperTurbostake: check transaction timestamp
+        // Heirloom: check transaction timestamp
         if (GetBlockTime() < (int64)tx.nTime)
             return DoS(50, error("CheckBlock() : block timestamp earlier than transaction timestamp"));
     }
@@ -2010,7 +2010,7 @@ bool CBlock::CheckBlock() const
     if (hashMerkleRoot != BuildMerkleTree())
         return DoS(100, error("CheckBlock() : hashMerkleRoot mismatch"));
 
-    // SuperTurbostake: check block signature
+    // Heirloom: check block signature
     if (!CheckBlockSignature())
         return DoS(100, error("CheckBlock() : bad block signature"));
 
@@ -2048,7 +2048,7 @@ bool CBlock::AcceptBlock()
     if (!Checkpoints::CheckHardened(nHeight, hash))
         return DoS(100, error("AcceptBlock() : rejected by hardened checkpoint lockin at %d", nHeight));
 
-    // SuperTurbostake: check that the block satisfies synchronized checkpoint
+    // Heirloom: check that the block satisfies synchronized checkpoint
     if (!Checkpoints::CheckSync(hash, pindexPrev))
         return error("AcceptBlock() : rejected by synchronized checkpoint");
 
@@ -2072,7 +2072,7 @@ bool CBlock::AcceptBlock()
                 pnode->PushInventory(CInv(MSG_BLOCK, hash));
     }
 
-    // SuperTurbostake: check pending sync-checkpoint
+    // Heirloom: check pending sync-checkpoint
     Checkpoints::AcceptPendingSyncCheckpoint();
 
     return true;
@@ -2087,7 +2087,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     if (mapOrphanBlocks.count(hash))
         return error("ProcessBlock() : already have block (orphan) %s", hash.ToString().substr(0,20).c_str());
 
-    // SuperTurbostake: check proof-of-stake
+    // Heirloom: check proof-of-stake
     // Limited duplicity on stake: prevents block flood attack
     // Duplicate stake allowed only when there is orphan child block
     if (pblock->IsProofOfStake() && setStakeSeen.count(pblock->GetProofOfStake()) && !mapOrphanBlocksByPrev.count(hash) && !Checkpoints::WantedByPendingSyncCheckpoint(hash))
@@ -2097,7 +2097,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     if (!pblock->CheckBlock())
         return error("ProcessBlock() : CheckBlock FAILED");
 
-    // SuperTurbostake: verify hash target and signature of coinstake tx
+    // Heirloom: verify hash target and signature of coinstake tx
     if (pblock->IsProofOfStake())
     {
         uint256 hashProofOfStake = 0;
@@ -2128,7 +2128,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
         }
     }
 
-    // SuperTurbostake: ask for pending sync-checkpoint if any
+    // Heirloom: ask for pending sync-checkpoint if any
     if (!IsInitialBlockDownload())
         Checkpoints::AskForPendingSyncCheckpoint(pfrom);
 
@@ -2137,7 +2137,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     {
         printf("ProcessBlock: ORPHAN BLOCK, prev=%s\n", pblock->hashPrevBlock.ToString().substr(0,20).c_str());
         CBlock* pblock2 = new CBlock(*pblock);
-        // SuperTurbostake: check proof-of-stake
+        // Heirloom: check proof-of-stake
         if (pblock2->IsProofOfStake())
         {
             // Limited duplicity on stake: prevents block flood attack
@@ -2159,7 +2159,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
         if (pfrom)
         {
             pfrom->PushGetBlocks(pindexBest, GetOrphanRoot(pblock2));
-            // SuperTurbostake: getblocks may not obtain the ancestor block rejected
+            // Heirloom: getblocks may not obtain the ancestor block rejected
             // earlier by duplicate-stake check so we ask for it again directly
             if (!IsInitialBlockDownload())
                 pfrom->AskFor(CInv(MSG_BLOCK, WantedByOrphan(pblock2)));
@@ -2193,14 +2193,14 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
 
     printf("ProcessBlock: ACCEPTED\n");
 
-    // SuperTurbostake: if responsible for sync-checkpoint send it
+    // Heirloom: if responsible for sync-checkpoint send it
     if (pfrom && !CSyncCheckpoint::strMasterPrivKey.empty())
         Checkpoints::SendSyncCheckpoint(Checkpoints::AutoSelectSyncCheckpoint());
 
     return true;
 }
 
-// SuperTurbostake: sign block
+// Heirloom: sign block
 bool CBlock::SignBlock(const CKeyStore& keystore)
 {
     vector<valtype> vSolutions;
@@ -2223,7 +2223,7 @@ bool CBlock::SignBlock(const CKeyStore& keystore)
     return false;
 }
 
-// SuperTurbostake: check block signature
+// Heirloom: check block signature
 bool CBlock::CheckBlockSignature() const
 {
     if (GetHash() == hashGenesisBlock)
@@ -2248,7 +2248,7 @@ bool CBlock::CheckBlockSignature() const
     return false;
 }
 
-// SuperTurbostake: entropy bit for stake modifier if chosen by modifier
+// Heirloom: entropy bit for stake modifier if chosen by modifier
 unsigned int CBlock::GetStakeEntropyBit() const
 {
     unsigned int nEntropyBit = 0;
@@ -2287,7 +2287,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        ThreadSafeMessageBox(strMessage, "SuperTurbostake", wxOK | wxICON_EXCLAMATION | wxMODAL);
+        ThreadSafeMessageBox(strMessage, "Heirloom", wxOK | wxICON_EXCLAMATION | wxMODAL);
         StartShutdown();
         return false;
     }
@@ -2348,7 +2348,7 @@ bool LoadBlockIndex(bool fAllowNew)
     }
 
     printf("%s Network: genesis=0x%s nBitsLimit=0x%08x nBitsInitial=0x%08x nStakeMinAge=%d nCoinbaseMaturity=%d nModifierInterval=%d\n",
-           fTestNet? "Test" : "SuperTurbostake", hashGenesisBlock.ToString().substr(0, 20).c_str(), bnProofOfWorkLimit.GetCompact(), bnInitialHashTarget.GetCompact(), nStakeMinAge, nCoinbaseMaturity, nModifierInterval);
+           fTestNet? "Test" : "Heirloom", hashGenesisBlock.ToString().substr(0, 20).c_str(), bnProofOfWorkLimit.GetCompact(), bnInitialHashTarget.GetCompact(), nStakeMinAge, nCoinbaseMaturity, nModifierInterval);
 
     //
     // Load block index
@@ -2413,11 +2413,11 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!block.AddToBlockIndex(nFile, nBlockPos))
             return error("LoadBlockIndex() : genesis block not accepted");
 
-        // SuperTurbostake: initialize synchronized checkpoint
+        // Heirloom: initialize synchronized checkpoint
         if (!Checkpoints::WriteSyncCheckpoint(hashGenesisBlock))
             return error("LoadBlockIndex() : failed to init sync checkpoint");
 
-        // SuperTurbostake: upgrade time set to zero if txdb initialized
+        // Heirloom: upgrade time set to zero if txdb initialized
         {
             CTxDB txdb;
             if (!txdb.WriteV04UpgradeTime(0))
@@ -2427,7 +2427,7 @@ bool LoadBlockIndex(bool fAllowNew)
         }
     }
 
-    // SuperTurbostake: if checkpoint master key changed must reset sync-checkpoint
+    // Heirloom: if checkpoint master key changed must reset sync-checkpoint
     {
         CTxDB txdb;
         string strPubKey = "";
@@ -2445,7 +2445,7 @@ bool LoadBlockIndex(bool fAllowNew)
         txdb.Close();
     }
 
-    // SuperTurbostake: upgrade time set to zero if txdb initialized
+    // Heirloom: upgrade time set to zero if txdb initialized
     {
         CTxDB txdb;
         if (txdb.ReadV04UpgradeTime(nProtocolV04UpgradeTime))
@@ -2572,14 +2572,14 @@ string GetWarnings(string strFor)
     if (GetBoolArg("-testsafemode"))
         strRPC = "test";
 
-    // SuperTurbostake: wallet lock warning for minting
+    // Heirloom: wallet lock warning for minting
     if (strMintWarning != "")
     {
         nPriority = 0;
         strStatusBar = strMintWarning;
     }
 
-    // SuperTurbostake: wallet lock warning for minting
+    // Heirloom: wallet lock warning for minting
         if (strMotivational != "")
         {
             nPriority = 101;
@@ -2593,22 +2593,22 @@ string GetWarnings(string strFor)
         strStatusBar = strMiscWarning;
     }
 
-    // SuperTurbostake: should not enter safe mode for longer invalid chain
-    // SuperTurbostake: if sync-checkpoint is too old do not enter safe mode
+    // Heirloom: should not enter safe mode for longer invalid chain
+    // Heirloom: if sync-checkpoint is too old do not enter safe mode
     if (Checkpoints::IsSyncCheckpointTooOld(60 * 60 * 24 * 15) && !fTestNet)
     {
         nPriority = 100;
         strStatusBar = "";
     }
 
-    // SuperTurbostake: if detected invalid checkpoint enter safe mode
+    // Heirloom: if detected invalid checkpoint enter safe mode
     if (Checkpoints::hashInvalidCheckpoint != 0)
     {
         nPriority = 3000;
         strStatusBar = strRPC = "WARNING: Invalid checkpoint found! Displayed transactions may not be correct! You may need to upgrade, or notify developers of the issue.";
     }
 
-    // SuperTurbostake: if detected unmet upgrade requirement enter safe mode
+    // Heirloom: if detected unmet upgrade requirement enter safe mode
     // Note: v0.4 upgrade requires blockchain redownload if past protocol switch
     if (IsProtocolV04(nProtocolV04UpgradeTime + 60*60*24)) // 1 day margin
     {
@@ -2627,7 +2627,7 @@ string GetWarnings(string strFor)
                 nPriority = alert.nPriority;
                 strStatusBar = alert.strStatusBar;
                 if (nPriority > 1000)
-                    strRPC = strStatusBar;  // SuperTurbostake: safe mode for high alert
+                    strRPC = strStatusBar;  // Heirloom: safe mode for high alert
             }
         }
     }
@@ -2791,7 +2791,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             return true;
         }
 
-        // SuperTurbostake: record my external IP reported by peer
+        // Heirloom: record my external IP reported by peer
         if (addrFrom.IsRoutable() && addrMe.IsRoutable())
             addrSeenByPeer = addrMe;
 
@@ -2850,7 +2850,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
                 item.second.RelayTo(pfrom);
         }
 
-        // SuperTurbostake: relay sync-checkpoint
+        // Heirloom: relay sync-checkpoint
         {
             LOCK(Checkpoints::cs_hashSyncCheckpoint);
             if (!Checkpoints::checkpointMessage.IsNull())
@@ -2863,7 +2863,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 
         cPeerBlockCounts.input(pfrom->nStartingHeight);
 
-        // SuperTurbostake: ask for pending sync-checkpoint if any
+        // Heirloom: ask for pending sync-checkpoint if any
         if (!IsInitialBlockDownload())
             Checkpoints::AskForPendingSyncCheckpoint(pfrom);
     }
@@ -3033,7 +3033,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
                         // Bypass PushInventory, this must send even if redundant,
                         // and we want it right after the last block so they don't
                         // wait for other stuff first.
-                        // SuperTurbostake: send latest proof-of-work block to allow the
+                        // Heirloom: send latest proof-of-work block to allow the
                         // download node to accept as orphan (proof-of-stake 
                         // block might be rejected by stake connection check)
                         vector<CInv> vInv;
@@ -3080,7 +3080,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
             if (pindex->GetBlockHash() == hashStop)
             {
                 printf("  getblocks stopping at %d %s (%u bytes)\n", pindex->nHeight, pindex->GetBlockHash().ToString().substr(0,20).c_str(), nBytes);
-                // SuperTurbostake: tell downloading node about the latest block if it's
+                // Heirloom: tell downloading node about the latest block if it's
                 // without risk being rejected due to stake connection check
                 if (hashStop != hashBestChain && pindex->GetBlockTime() + nStakeMinAge > pindexBest->GetBlockTime())
                     pfrom->PushInventory(CInv(MSG_BLOCK, hashBestChain));
@@ -3770,7 +3770,7 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool fProofOfS
     // Add our coinbase tx as first transaction
     pblock->vtx.push_back(txNew);
 
-    // SuperTurbostake: if coinstake available add coinstake tx
+    // Heirloom: if coinstake available add coinstake tx
     static int64 nLastCoinStakeSearchTime = GetAdjustedTime();  // only initialized at startup
     CBlockIndex* pindexPrev = pindexBest;
 
@@ -3887,7 +3887,7 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool fProofOfS
             if (tx.nTime > GetAdjustedTime() || (pblock->IsProofOfStake() && tx.nTime > pblock->vtx[1].nTime))
                 continue;
 
-            // SuperTurbostake: simplify transaction fee - allow free = false
+            // Heirloom: simplify transaction fee - allow free = false
             int64 nMinFee = tx.GetMinFee(nBlockSize, false, GMF_BLOCK);
 
             // Connecting shouldn't fail due to dependency on other memory pool transactions
@@ -4117,7 +4117,7 @@ void BitcoinMiner(CWallet *pwallet, bool fProofOfStake)
 
         if (fProofOfStake)
         {
-            // SuperTurbostake: if proof-of-stake block found then process block
+            // Heirloom: if proof-of-stake block found then process block
             if (pblock->IsProofOfStake())
             {
                 if (!pblock->SignBlock(*pwalletMain))

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2013 The SuperTurbostake developers
+// Copyright (c) 2011-2013 The Heirloom developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -68,7 +68,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // SuperTurbostake: synchronized checkpoint (centrally broadcasted)
+    // Heirloom: synchronized checkpoint (centrally broadcasted)
     uint256 hashSyncCheckpoint = 0;
     uint256 hashPendingCheckpoint = 0;
     CSyncCheckpoint checkpointMessage;
@@ -76,7 +76,7 @@ namespace Checkpoints
     uint256 hashInvalidCheckpoint = 0;
     CCriticalSection cs_hashSyncCheckpoint;
 
-    // SuperTurbostake: get last synchronized checkpoint
+    // Heirloom: get last synchronized checkpoint
     CBlockIndex* GetLastSyncCheckpoint()
     {
         LOCK(cs_hashSyncCheckpoint);
@@ -87,7 +87,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // SuperTurbostake: only descendant of current sync-checkpoint is allowed
+    // Heirloom: only descendant of current sync-checkpoint is allowed
     bool ValidateSyncCheckpoint(uint256 hashCheckpoint)
     {
         if (!mapBlockIndex.count(hashSyncCheckpoint))
@@ -246,7 +246,7 @@ namespace Checkpoints
         return false;
     }
 
-    // SuperTurbostake: reset synchronized checkpoint to last hardened checkpoint
+    // Heirloom: reset synchronized checkpoint to last hardened checkpoint
     bool ResetSyncCheckpoint()
     {
         LOCK(cs_hashSyncCheckpoint);
@@ -368,12 +368,12 @@ namespace Checkpoints
     }
 }
 
-// SuperTurbostake: sync-checkpoint master key
+// Heirloom: sync-checkpoint master key
 const std::string CSyncCheckpoint::strMasterPubKey = "04f1a99942f4568b8c6daba2f8dee549f1a9a580034a092e51f9879b3521394a90cc8eea850defd8414f32f67af437235541408b2c63a5607f86e7adbd794b59c8";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
-// SuperTurbostake: verify signature of sync-checkpoint message
+// Heirloom: verify signature of sync-checkpoint message
 bool CSyncCheckpoint::CheckSignature()
 {
     CKey key;
@@ -388,7 +388,7 @@ bool CSyncCheckpoint::CheckSignature()
     return true;
 }
 
-// SuperTurbostake: process synchronized checkpoint
+// Heirloom: process synchronized checkpoint
 bool CSyncCheckpoint::ProcessSyncCheckpoint(CNode* pfrom)
 {
     if (!CheckSignature())

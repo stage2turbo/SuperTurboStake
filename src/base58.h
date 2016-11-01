@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin Developers
-// Copyright (c) 2011-2012 The SuperTurbostake developers
+// Copyright (c) 2011-2012 The Heirloom developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -277,8 +277,8 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 51,  // SuperTurbostake: addresses begin with 't'
-        SCRIPT_ADDRESS = 26, // SuperTurbostake: addresses begin with 'T'
+        PUBKEY_ADDRESS = 51,  // Heirloom: addresses begin with 't'
+        SCRIPT_ADDRESS = 26, // Heirloom: addresses begin with 'T'
         PUBKEY_ADDRESS_TEST = 111,
         SCRIPT_ADDRESS_TEST = 196,
     };

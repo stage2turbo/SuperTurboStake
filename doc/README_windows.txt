@@ -1,6 +1,6 @@
-SuperTurbostake (SuperTurbostake) 0.4.0 BETA
+Heirloom (Heirloom) 0.4.0 BETA
 
-Copyright (c) 2011-2014 SuperTurbostake (SuperTurbostake) Developers
+Copyright (c) 2011-2014 Heirloom (Heirloom) Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file license.txt or http://www.opensource.org/licenses/mit-license.php.
 This product includes software developed by the OpenSSL Project for use in
@@ -10,7 +10,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-SuperTurbostake is a free open source project derived from Bitcoin, with
+Heirloom is a free open source project derived from Bitcoin, with
 the goal of providing a long-term energy-efficient crypto-currency.
 Built on the foundation of Bitcoin, innovations such as proof-of-stake
 help further advance the field of crypto-currency.
@@ -18,19 +18,19 @@ help further advance the field of crypto-currency.
 
 Setup
 -----
-After completing windows setup then run SuperTurbostake-qt.
-Alternatively you can run windows command line (cmd) in SuperTurbostake program dir.
+After completing windows setup then run Heirloom-qt.
+Alternatively you can run windows command line (cmd) in Heirloom program dir.
   cd daemon
   SuperTurbostaked
-You would need to create a configuration file SuperTurbostake.conf in the default
-wallet directory. Grant access to SuperTurbostaked/SuperTurbostake-qt in anti-virus and firewall
+You would need to create a configuration file Heirloom.conf in the default
+wallet directory. Grant access to SuperTurbostaked/Heirloom-qt in anti-virus and firewall
 applications if necessary.
 
 The software automatically finds other nodes to connect to.  You can
 enable Universal Plug and Play (UPnP) with your router/firewall
 or forward port 6901 (TCP) to your computer so you can receive
-incoming connections.  SuperTurbostake works without incoming connections,
-but allowing incoming connections helps the SuperTurbostake network.
+incoming connections.  Heirloom works without incoming connections,
+but allowing incoming connections helps the Heirloom network.
 
 
 Upgrade
@@ -46,7 +46,7 @@ required.
 
 
 See the documentation/wiki at github:
-  http://github.com/SuperTurbostake/SuperTurbostake
+  http://github.com/Heirloom/Heirloom
 for help and more information.
 
 

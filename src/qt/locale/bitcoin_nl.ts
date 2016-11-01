@@ -6,23 +6,23 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SuperTurbostake</source>
-        <translation>Over SuperTurbostake</translation>
+        <source>About Heirloom</source>
+        <translation>Over Heirloom</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="75"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="113"/>
-        <source>Copyright © 2014 SuperTurbostake Developers</source>
-        <translation>Copyright © 2014 SuperTurbostake Developers</translation>
+        <source>Copyright © 2014 Heirloom Developers</source>
+        <translation>Copyright © 2014 Heirloom Developers</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="120"/>
-        <source>Copyright © 2011-2014 SuperTurbostake Developers</source>
-        <translation>Copyright © 2011-2014 SuperTurbostake Developers</translation>
+        <source>Copyright © 2011-2014 Heirloom Developers</source>
+        <translation>Copyright © 2011-2014 Heirloom Developers</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="133"/>
@@ -48,8 +48,8 @@ Dit product bevat code ontwikkeld door het OpenSSL project voor het gebruik in h
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SuperTurbostake addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit zijn je SuperTurbostake adressen om bedragen te ontvangen. Je kan een verschillend adres opgeven voor iedere geaddresseerde zodat je kan achterhalen wie jouw betaalt.</translation>
+        <source>These are your Heirloom addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dit zijn je Heirloom adressen om bedragen te ontvangen. Je kan een verschillend adres opgeven voor iedere geaddresseerde zodat je kan achterhalen wie jouw betaalt.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="33"/>
@@ -266,8 +266,8 @@ Weet je zeker dat je de portemonee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>SuperTurbostake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
-        <translation>SuperTurbostake sluit nu af om het versleutelings proces te beeindigen. Onthoud dat het versleutelen van de portemonnee je SuperTurbostakes niet volledig kan beschermen tegen schadelijke software op een geinfecteerde computer</translation>
+        <source>Heirloom will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
+        <translation>Heirloom sluit nu af om het versleutelings proces te beeindigen. Onthoud dat het versleutelen van de portemonnee je SuperTurbostakes niet volledig kan beschermen tegen schadelijke software op een geinfecteerde computer</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
@@ -382,8 +382,8 @@ Weet je zeker dat je de portemonee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="254"/>
-        <source>Show information about SuperTurbostake</source>
-        <translation>Toon informatie over SuperTurbostake</translation>
+        <source>Show information about Heirloom</source>
+        <translation>Toon informatie over Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
@@ -497,38 +497,38 @@ Weet je zeker dat je de portemonee wilt versleutelen?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="76"/>
-        <source>SuperTurbostake Wallet</source>
-        <translation>SuperTurbostake portemonnee</translation>
+        <source>Heirloom Wallet</source>
+        <translation>Heirloom portemonnee</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="222"/>
-        <source>Send coins to a SuperTurbostake address</source>
-        <translation>Zend munten naar een SuperTurbostake adres</translation>
+        <source>Send coins to a Heirloom address</source>
+        <translation>Zend munten naar een Heirloom adres</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>&amp;About SuperTurbostake</source>
-        <translation>Over SuperTurbostake</translation>
+        <source>&amp;About Heirloom</source>
+        <translation>Over Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="260"/>
-        <source>Modify configuration options for SuperTurbostake</source>
-        <translation>Wijzig configuratie opties voor SuperTurbostake</translation>
+        <source>Modify configuration options for Heirloom</source>
+        <translation>Wijzig configuratie opties voor Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="262"/>
-        <source>Show/Hide &amp;SuperTurbostake</source>
-        <translation>Toon/Verberg &amp;SuperTurbostake</translation>
+        <source>Show/Hide &amp;Heirloom</source>
+        <translation>Toon/Verberg &amp;Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="263"/>
-        <source>Show or hide the SuperTurbostake window</source>
-        <translation>Toon of verberg het SuperTurbostake scherm</translation>
+        <source>Show or hide the Heirloom window</source>
+        <translation>Toon of verberg het Heirloom scherm</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="415"/>
-        <source>SuperTurbostake client</source>
-        <translation>SuperTurbostake client</translation>
+        <source>Heirloom client</source>
+        <translation>Heirloom client</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="443"/>
@@ -537,7 +537,7 @@ Weet je zeker dat je de portemonee wilt versleutelen?</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="507"/>
-        <source>%n active connection(s) to SuperTurbostake network</source>
+        <source>%n active connection(s) to Heirloom network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -678,8 +678,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="128"/>
-        <source>A fatal error occured. SuperTurbostake can no longer continue safely and will quit.</source>
-        <translation>Een fatale fout heeft plaatsgevonden. SuperTurbostake kan niet langer veilig doorgaan en zal afsluiten.</translation>
+        <source>A fatal error occured. Heirloom can no longer continue safely and will quit.</source>
+        <translation>Een fatale fout heeft plaatsgevonden. Heirloom kan niet langer veilig doorgaan en zal afsluiten.</translation>
     </message>
 </context>
 <context>
@@ -976,7 +976,7 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="287"/>
-        <source>Whether to show SuperTurbostake addresses in the transaction list</source>
+        <source>Whether to show Heirloom addresses in the transaction list</source>
         <translation>Toon SuperTurbostakeadressen in transactielijst</translation>
     </message>
     <message>
@@ -1044,8 +1044,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid SuperTurbostake address.</source>
-        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig SuperTurbostake adres.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Heirloom address.</source>
+        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig Heirloom adres.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
@@ -1087,8 +1087,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="187"/>
-        <source>Automatically open the SuperTurbostake client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open automatisch de SuperTurbostake client poort op de router. Dit werkt alleen indien je router PnP ondersteund en het geactiveerd is.</translation>
+        <source>Automatically open the Heirloom client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open automatisch de Heirloom client poort op de router. Dit werkt alleen indien je router PnP ondersteund en het geactiveerd is.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="190"/>
@@ -1098,7 +1098,7 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     <message>
         <location filename="../optionsdialog.cpp" line="191"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>Verbind met het SuperTurbostake-netwerk door een SOCKS4 proxy (bijv. wanneer Tor gebruikt wordt)</translation>
+        <translation>Verbind met het Heirloom-netwerk door een SOCKS4 proxy (bijv. wanneer Tor gebruikt wordt)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="196"/>
@@ -1122,8 +1122,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 STRB fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
-        <translation>Verplichte network transactie kosten per verstuurde kB. De meeste transacties zijn 1kB en kosten 0.01 STRB. Opm. Het aantal verstuurde kB neemt toe afhankelijk van het aantal ingebrachte transacties benodigd om de betaling te kunnen bekostigen.</translation>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 HEIR fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <translation>Verplichte network transactie kosten per verstuurde kB. De meeste transacties zijn 1kB en kosten 0.01 HEIR. Opm. Het aantal verstuurde kB neemt toe afhankelijk van het aantal ingebrachte transacties benodigd om de betaling te kunnen bekostigen.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -1142,13 +1142,13 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="172"/>
-        <source>&amp;Start SuperTurbostake on window system startup</source>
-        <translation>Start SuperTurbostake als windows wordt geladen</translation>
+        <source>&amp;Start Heirloom on window system startup</source>
+        <translation>Start Heirloom als windows wordt geladen</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="173"/>
-        <source>Automatically start SuperTurbostake after the computer is turned on</source>
-        <translation>Start SuperTurbostake automatisch nadat de computer is ingeschakeld</translation>
+        <source>Automatically start Heirloom after the computer is turned on</source>
+        <translation>Start Heirloom automatisch nadat de computer is ingeschakeld</translation>
     </message>
 </context>
 <context>
@@ -1432,8 +1432,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>STRB</source>
-        <translation>STRB</translation>
+        <source>HEIR</source>
+        <translation>HEIR</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>
@@ -1475,8 +1475,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>SuperTurbostake (SuperTurbostake) debug window</source>
-        <translation>SuperTurbostake (PPcoin) debug scherm</translation>
+        <source>Heirloom (Heirloom) debug window</source>
+        <translation>Heirloom (PPcoin) debug scherm</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="24"/>
@@ -1567,8 +1567,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="306"/>
-        <source>Welcome to the SuperTurbostake RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Welkom bij de SuperTurbostake RPC console. &lt;br&gt;Gebruik pijltjes naar boven en naar beneden om de geschiedenis te navigeren, en &lt;b&gt;Ctrl-L&lt;/b&gt; om het scherm te wissen.&lt;br&gt;Typ &lt;b&gt;help&lt;/b&gt; voor een overzicht met commandos.</translation>
+        <source>Welcome to the Heirloom RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Welkom bij de Heirloom RPC console. &lt;br&gt;Gebruik pijltjes naar boven en naar beneden om de geschiedenis te navigeren, en &lt;b&gt;Ctrl-L&lt;/b&gt; om het scherm te wissen.&lt;br&gt;Typ &lt;b&gt;help&lt;/b&gt; voor een overzicht met commandos.</translation>
     </message>
 </context>
 <context>
@@ -1782,7 +1782,7 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     <message>
         <location filename="../sendcoinsdialog.cpp" line="457"/>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Waarschuwing: Ongeldig SuperTurbostake adres</translation>
+        <translation>Waarschuwing: Ongeldig Heirloom adres</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="466"/>
@@ -1801,8 +1801,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="36"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Voer een SuperTurbostake adres in</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Voer een Heirloom adres in</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="177"/>
@@ -1890,8 +1890,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="25"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Voer een SuperTurbostake adres in</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Voer een Heirloom adres in</translation>
     </message>
 </context>
 <context>
@@ -1955,8 +1955,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="152"/>
-        <source>Sign the message to prove you own this SuperTurbostake address</source>
-        <translation>Bewijs dat je dit SuperTurbostake adres bezit door het te ondertekenen </translation>
+        <source>Sign the message to prove you own this Heirloom address</source>
+        <translation>Bewijs dat je dit Heirloom adres bezit door het te ondertekenen </translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="155"/>
@@ -1991,8 +1991,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="295"/>
-        <source>Verify the message to ensure it was signed with the specified SuperTurbostake address</source>
-        <translation>Verifieer het bericht om vast te stellen dat het bericht ondertekend was met het gespecificeerde SuperTurbostake adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Heirloom address</source>
+        <translation>Verifieer het bericht om vast te stellen dat het bericht ondertekend was met het gespecificeerde Heirloom adres</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="298"/>
@@ -2017,8 +2017,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     <message>
         <location filename="../signverifymessagedialog.cpp" line="31"/>
         <location filename="../signverifymessagedialog.cpp" line="32"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Voer een SuperTurbostake adres in</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Voer een Heirloom adres in</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="115"/>
@@ -2576,13 +2576,13 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="8"/>
-        <source>Unable to bind to port %d on this computer.  SuperTurbostake is probably already running.</source>
-        <translation>Onmogelijk om poort %d te verbinden op deze computer. SuperTurbostake is mogelijk al eerder opgestart.</translation>
+        <source>Unable to bind to port %d on this computer.  Heirloom is probably already running.</source>
+        <translation>Onmogelijk om poort %d te verbinden op deze computer. Heirloom is mogelijk al eerder opgestart.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="12"/>
-        <source>SuperTurbostake version</source>
-        <translation>SuperTurbostake versie</translation>
+        <source>Heirloom version</source>
+        <translation>Heirloom versie</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="14"/>
@@ -2609,8 +2609,8 @@ Bedragen kleiner dan 0.546 keer de minimum vergoeding worden weergegeven als STO
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="18"/>
-        <source>Specify configuration file (default: SuperTurbostake.conf)</source>
-        <translation>Configuratiebestand specificeren (standaard: SuperTurbostake.conf)</translation>
+        <source>Specify configuration file (default: Heirloom.conf)</source>
+        <translation>Configuratiebestand specificeren (standaard: Heirloom.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="19"/>
@@ -2890,23 +2890,23 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
-        <source>Cannot obtain a lock on data directory %s.  SuperTurbostake is probably already running.</source>
-        <translation>Blokkeren van data folder %s is niet gelukt. SuperTurbostake is mogelijk al opgestart.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Heirloom is probably already running.</source>
+        <translation>Blokkeren van data folder %s is niet gelukt. Heirloom is mogelijk al opgestart.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>
-        <source>SuperTurbostake</source>
-        <translation>SuperTurbostake</translation>
+        <source>Heirloom</source>
+        <translation>Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="88"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SuperTurbostake</source>
-        <translation>Fout geconstateerd bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van SuperTurbostake</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Heirloom</source>
+        <translation>Fout geconstateerd bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="89"/>
-        <source>Wallet needed to be rewritten: restart SuperTurbostake to complete</source>
-        <translation>Portemonnee dient opnieuw bewerkt te worden: start SuperTurbostake opnieuw op om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Heirloom to complete</source>
+        <translation>Portemonnee dient opnieuw bewerkt te worden: start Heirloom opnieuw op om te voltooien</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
@@ -2922,8 +2922,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="119"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong SuperTurbostake will not work properly.</source>
-        <translation>Waarschuwing: controleer of de datum en tijd op uw computer correct zijn. Indien uw klok verkeerd staat, zal SuperTurbostake niet goed werken</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Heirloom will not work properly.</source>
+        <translation>Waarschuwing: controleer of de datum en tijd op uw computer correct zijn. Indien uw klok verkeerd staat, zal Heirloom niet goed werken</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="82"/>

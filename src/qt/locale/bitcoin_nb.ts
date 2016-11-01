@@ -6,23 +6,23 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SuperTurbostake</source>
-        <translation>Om SuperTurbostake</translation>
+        <source>About Heirloom</source>
+        <translation>Om Heirloom</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="75"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="113"/>
-        <source>Copyright © 2014 SuperTurbostake Developers</source>
-        <translation>Copyright © 2014 SuperTurbostake Utviklerne</translation>
+        <source>Copyright © 2014 Heirloom Developers</source>
+        <translation>Copyright © 2014 Heirloom Utviklerne</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="120"/>
-        <source>Copyright © 2011-2014 SuperTurbostake Developers</source>
-        <translation>Copyright © 2015 SuperTurbostake Utviklerne</translation>
+        <source>Copyright © 2011-2014 Heirloom Developers</source>
+        <translation>Copyright © 2015 Heirloom Utviklerne</translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="133"/>
@@ -48,8 +48,8 @@ Dette produktet inneholder programvare utviklet av OpenSSL Project for bruk i Op
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SuperTurbostake addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine SuperTurbostake-adresser for å motta betalinger. Du kan gi en adresse til hver enkelt som skal betale deg, slik at du kan holde orden på hvem som har betalt.</translation>
+        <source>These are your Heirloom addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine Heirloom-adresser for å motta betalinger. Du kan gi en adresse til hver enkelt som skal betale deg, slik at du kan holde orden på hvem som har betalt.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="33"/>
@@ -266,8 +266,8 @@ Er du sikker på at du vil kryptere lommeboken din?</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>SuperTurbostake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
-        <translation>SuperTurbostake vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine peercoins fra å bli stjålet av skadevare som infiserer datamaskinen din.</translation>
+        <source>Heirloom will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
+        <translation>Heirloom vil nå lukkes for å fullføre krypteringsprosessen. Husk at kryptering av lommeboken ikke fullt ut kan beskytte dine peercoins fra å bli stjålet av skadevare som infiserer datamaskinen din.</translation>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="123"/>
@@ -382,8 +382,8 @@ Er du sikker på at du vil kryptere lommeboken din?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="254"/>
-        <source>Show information about SuperTurbostake</source>
-        <translation>Vis informasjon om SuperTurbostake</translation>
+        <source>Show information about Heirloom</source>
+        <translation>Vis informasjon om Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="256"/>
@@ -497,38 +497,38 @@ Er du sikker på at du vil kryptere lommeboken din?</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="76"/>
-        <source>SuperTurbostake Wallet</source>
-        <translation>SuperTurbostake Lommebok</translation>
+        <source>Heirloom Wallet</source>
+        <translation>Heirloom Lommebok</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="222"/>
-        <source>Send coins to a SuperTurbostake address</source>
-        <translation>Send mynter til en SuperTurbostake-adresse</translation>
+        <source>Send coins to a Heirloom address</source>
+        <translation>Send mynter til en Heirloom-adresse</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>&amp;About SuperTurbostake</source>
-        <translation>&amp;Om SuperTurbostake</translation>
+        <source>&amp;About Heirloom</source>
+        <translation>&amp;Om Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="260"/>
-        <source>Modify configuration options for SuperTurbostake</source>
-        <translation>Endre oppsett for SuperTurbostake</translation>
+        <source>Modify configuration options for Heirloom</source>
+        <translation>Endre oppsett for Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="262"/>
-        <source>Show/Hide &amp;SuperTurbostake</source>
-        <translation>Vis/Skjul &amp;SuperTurbostake</translation>
+        <source>Show/Hide &amp;Heirloom</source>
+        <translation>Vis/Skjul &amp;Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="263"/>
-        <source>Show or hide the SuperTurbostake window</source>
-        <translation>Vis eller skjul SuperTurbostake-vinduet</translation>
+        <source>Show or hide the Heirloom window</source>
+        <translation>Vis eller skjul Heirloom-vinduet</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="415"/>
-        <source>SuperTurbostake client</source>
-        <translation>SuperTurbostake klient</translation>
+        <source>Heirloom client</source>
+        <translation>Heirloom klient</translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="443"/>
@@ -537,7 +537,7 @@ Er du sikker på at du vil kryptere lommeboken din?</translation>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="507"/>
-        <source>%n active connection(s) to SuperTurbostake network</source>
+        <source>%n active connection(s) to Heirloom network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -678,8 +678,8 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="128"/>
-        <source>A fatal error occured. SuperTurbostake can no longer continue safely and will quit.</source>
-        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og SuperTurbostake må derfor avslutte.</translation>
+        <source>A fatal error occured. Heirloom can no longer continue safely and will quit.</source>
+        <translation>En fatal feil har inntruffet. Det er ikke trygt å fortsette og Heirloom må derfor avslutte.</translation>
     </message>
 </context>
 <context>
@@ -716,7 +716,7 @@ Adresse: %4
         <location filename="../forms/coincontroldialog.ui" line="310"/>
         <location filename="../forms/coincontroldialog.ui" line="348"/>
         <source>0.00 BTC</source>
-        <translation>0.00 STRB</translation>
+        <translation>0.00 HEIR</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="157"/>
@@ -980,8 +980,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="287"/>
-        <source>Whether to show SuperTurbostake addresses in the transaction list</source>
-        <translation>Om SuperTurbostake-adresser skal vises i transaksjonslisten eller ikke.</translation>
+        <source>Whether to show Heirloom addresses in the transaction list</source>
+        <translation>Om Heirloom-adresser skal vises i transaksjonslisten eller ikke.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="290"/>
@@ -1048,8 +1048,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid SuperTurbostake address.</source>
-        <translation>Den oppgitte adressen &quot;%1&quot; er ikke en gyldig SuperTurbostake-adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Heirloom address.</source>
+        <translation>Den oppgitte adressen &quot;%1&quot; er ikke en gyldig Heirloom-adresse.</translation>
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="101"/>
@@ -1091,8 +1091,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="187"/>
-        <source>Automatically open the SuperTurbostake client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åpne automatisk SuperTurbostake klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
+        <source>Automatically open the Heirloom client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åpne automatisk Heirloom klientporten på ruteren. Dette virker kun om din ruter støtter UPnP og dette er påslått.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="190"/>
@@ -1102,7 +1102,7 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     <message>
         <location filename="../optionsdialog.cpp" line="191"/>
         <source>Connect to the Bitcon network through a SOCKS4 proxy (e.g. when connecting through Tor)</source>
-        <translation>Koble til SuperTurbostake sitt nettverket gjennom en SOCKS4-mellomtjener (f.eks. for tilkobling gjennom Tor)</translation>
+        <translation>Koble til Heirloom sitt nettverket gjennom en SOCKS4-mellomtjener (f.eks. for tilkobling gjennom Tor)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="196"/>
@@ -1126,8 +1126,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 STRB fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
-        <translation>Obligatorisk transaksjonsgebyr per kB overført. De fleste transaksjonene er 1 kB og krever et gebyr på 0,01 STRB. Størrelsen på transaksjoner kan øke på grunn av mengden inntransaksjoner som kreves for å finansiere betalingen.</translation>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 HEIR fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <translation>Obligatorisk transaksjonsgebyr per kB overført. De fleste transaksjonene er 1 kB og krever et gebyr på 0,01 HEIR. Størrelsen på transaksjoner kan øke på grunn av mengden inntransaksjoner som kreves for å finansiere betalingen.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -1146,13 +1146,13 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="172"/>
-        <source>&amp;Start SuperTurbostake on window system startup</source>
-        <translation>&amp;Start SuperTurbostake ved oppstart av datamaskinen</translation>
+        <source>&amp;Start Heirloom on window system startup</source>
+        <translation>&amp;Start Heirloom ved oppstart av datamaskinen</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="173"/>
-        <source>Automatically start SuperTurbostake after the computer is turned on</source>
-        <translation>Start SuperTurbostake automatisk når datamaskinen blir slått på</translation>
+        <source>Automatically start Heirloom after the computer is turned on</source>
+        <translation>Start Heirloom automatisk når datamaskinen blir slått på</translation>
     </message>
 </context>
 <context>
@@ -1436,8 +1436,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>STRB</source>
-        <translation>STRB</translation>
+        <source>HEIR</source>
+        <translation>HEIR</translation>
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="121"/>
@@ -1479,8 +1479,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>SuperTurbostake (SuperTurbostake) debug window</source>
-        <translation>SuperTurbostake feilsøkingsvindu</translation>
+        <source>Heirloom (Heirloom) debug window</source>
+        <translation>Heirloom feilsøkingsvindu</translation>
     </message>
     <message>
         <location filename="../forms/rpcconsole.ui" line="24"/>
@@ -1571,8 +1571,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="306"/>
-        <source>Welcome to the SuperTurbostake RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Velkommen til SuperTurbostake sin RPC-konsoll.&lt;br&gt;Bruk opp og ned pil for å navigere historikken, og &lt;b&gt;Ctrl-L&lt;/b&gt; for å tømme skjermen.&lt;br&gt;Skriv &lt;b&gt;help&lt;/b&gt; for en oversikt over kommandoer.</translation>
+        <source>Welcome to the Heirloom RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Velkommen til Heirloom sin RPC-konsoll.&lt;br&gt;Bruk opp og ned pil for å navigere historikken, og &lt;b&gt;Ctrl-L&lt;/b&gt; for å tømme skjermen.&lt;br&gt;Skriv &lt;b&gt;help&lt;/b&gt; for en oversikt over kommandoer.</translation>
     </message>
 </context>
 <context>
@@ -1636,7 +1636,7 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
         <location filename="../forms/sendcoinsdialog.ui" line="496"/>
         <location filename="../forms/sendcoinsdialog.ui" line="528"/>
         <source>0.00 BTC</source>
-        <translation>0.00 STRB</translation>
+        <translation>0.00 HEIR</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="337"/>
@@ -1706,7 +1706,7 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="714"/>
         <source>123.456 BTC</source>
-        <translation>123.456 STRB</translation>
+        <translation>123.456 HEIR</translation>
     </message>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="745"/>
@@ -1786,7 +1786,7 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="457"/>
         <source>Warning: Invalid Bitcoin address</source>
-        <translation>Advarsel: Ugyldig SuperTurbostake-adresse</translation>
+        <translation>Advarsel: Ugyldig Heirloom-adresse</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="466"/>
@@ -1805,8 +1805,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="36"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Angi en SuperTurbostake-adresse</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Angi en Heirloom-adresse</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="177"/>
@@ -1894,8 +1894,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="25"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Angi en SuperTurbostake-adresse</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Angi en Heirloom-adresse</translation>
     </message>
 </context>
 <context>
@@ -1959,8 +1959,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="152"/>
-        <source>Sign the message to prove you own this SuperTurbostake address</source>
-        <translation>Signer meldingen for å bevise at du eier denne SuperTurbostake-adressen</translation>
+        <source>Sign the message to prove you own this Heirloom address</source>
+        <translation>Signer meldingen for å bevise at du eier denne Heirloom-adressen</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="155"/>
@@ -1995,8 +1995,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="295"/>
-        <source>Verify the message to ensure it was signed with the specified SuperTurbostake address</source>
-        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte SuperTurbostake-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Heirloom address</source>
+        <translation>Verifiser meldingen for å være sikker på at den ble signert av den angitte Heirloom-adressen</translation>
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="298"/>
@@ -2021,8 +2021,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="31"/>
         <location filename="../signverifymessagedialog.cpp" line="32"/>
-        <source>Enter a SuperTurbostake address</source>
-        <translation>Angi en SuperTurbostake-adresse</translation>
+        <source>Enter a Heirloom address</source>
+        <translation>Angi en Heirloom-adresse</translation>
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="115"/>
@@ -2580,13 +2580,13 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="8"/>
-        <source>Unable to bind to port %d on this computer.  SuperTurbostake is probably already running.</source>
-        <translation>Ute av stand til å binde til port %d på denne datamaskinen. SuperTurbostake kjører sannsynligvis allerede.</translation>
+        <source>Unable to bind to port %d on this computer.  Heirloom is probably already running.</source>
+        <translation>Ute av stand til å binde til port %d på denne datamaskinen. Heirloom kjører sannsynligvis allerede.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="12"/>
-        <source>SuperTurbostake version</source>
-        <translation>SuperTurbostake versjon</translation>
+        <source>Heirloom version</source>
+        <translation>Heirloom versjon</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="14"/>
@@ -2610,8 +2610,8 @@ Dette betyr at et gebyr på minst %2 er påkrevd.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="18"/>
-        <source>Specify configuration file (default: SuperTurbostake.conf)</source>
-        <translation>Angi konfigurasjonsfil (standardverdi: SuperTurbostake.conf)</translation>
+        <source>Specify configuration file (default: Heirloom.conf)</source>
+        <translation>Angi konfigurasjonsfil (standardverdi: Heirloom.conf)</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="19"/>
@@ -2871,23 +2871,23 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
-        <source>Cannot obtain a lock on data directory %s.  SuperTurbostake is probably already running.</source>
-        <translation>Ute av stand til å låse datamappen %s. SuperTurbostake kjører sannsynligvis allerede.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Heirloom is probably already running.</source>
+        <translation>Ute av stand til å låse datamappen %s. Heirloom kjører sannsynligvis allerede.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>
-        <source>SuperTurbostake</source>
-        <translation>SuperTurbostake</translation>
+        <source>Heirloom</source>
+        <translation>Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="88"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SuperTurbostake</source>
-        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av SuperTurbostake</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Heirloom</source>
+        <translation>Feil ved lasting av wallet.dat: Lommeboken krever en nyere versjon av Heirloom</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="89"/>
-        <source>Wallet needed to be rewritten: restart SuperTurbostake to complete</source>
-        <translation>Lommeboken måtte skrives om: start SuperTurbostake på nytt for å fullføre</translation>
+        <source>Wallet needed to be rewritten: restart Heirloom to complete</source>
+        <translation>Lommeboken måtte skrives om: start Heirloom på nytt for å fullføre</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="103"/>
@@ -2903,8 +2903,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="119"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong SuperTurbostake will not work properly.</source>
-        <translation>Advarsel: Vennligst sjekk at datamaskinens dato og tid er korrekt. Hvis klokken din er feil vil ikke SuperTurbostake fungere skikkelig.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Heirloom will not work properly.</source>
+        <translation>Advarsel: Vennligst sjekk at datamaskinens dato og tid er korrekt. Hvis klokken din er feil vil ikke Heirloom fungere skikkelig.</translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="82"/>

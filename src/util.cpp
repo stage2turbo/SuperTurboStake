@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2012 The SuperTurbostake developers
+// Copyright (c) 2011-2012 The Heirloom developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -777,7 +777,7 @@ void FormatException(char* pszMessage, std::exception* pex, const char* pszThrea
     pszModule[0] = '\0';
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "SuperTurbostake";
+    const char* pszModule = "Heirloom";
 #endif
     if (pex)
         snprintf(pszMessage, 1000,
@@ -852,12 +852,12 @@ boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
 
-    // Windows: C:\Documents and Settings\username\Application Data\SuperTurbostake
-    // Mac: ~/Library/Application Support/SuperTurbostake
-    // Unix: ~/.SuperTurbostake
+    // Windows: C:\Documents and Settings\username\Application Data\Heirloom
+    // Mac: ~/Library/Application Support/Heirloom
+    // Unix: ~/.Heirloom
 #ifdef WIN32
     // Windows
-    return MyGetSpecialFolderPath(CSIDL_APPDATA, true) / "SuperTurbostake";
+    return MyGetSpecialFolderPath(CSIDL_APPDATA, true) / "Heirloom";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -869,10 +869,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "SuperTurbostake";
+    return pathRet / "Heirloom";
 #else
     // Unix
-    return pathRet / ".SuperTurbostake";
+    return pathRet / ".Heirloom";
 #endif
 #endif
 }
@@ -916,7 +916,7 @@ boost::filesystem::path GetConfigFile()
 {
     namespace fs = boost::filesystem;
 
-    fs::path pathConfigFile(GetArg("-conf", "SuperTurbostake.conf"));
+    fs::path pathConfigFile(GetArg("-conf", "Heirloom.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1071,10 +1071,10 @@ void AddTimeData(const CNetAddr& ip, int64 nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct.  If your clock is wrong SuperTurbostake will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct.  If your clock is wrong Heirloom will not work properly.");
                     strMiscWarning = strMessage;
                     printf("*** %s\n", strMessage.c_str());
-                    ThreadSafeMessageBox(strMessage+" ", string("SuperTurbostake"), wxOK | wxICON_EXCLAMATION);
+                    ThreadSafeMessageBox(strMessage+" ", string("Heirloom"), wxOK | wxICON_EXCLAMATION);
                 }
             }
         }
@@ -1116,9 +1116,9 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
     if (!comments.empty())
         ss << "(" << boost::algorithm::join(comments, "; ") << ")";
     ss << "/";
-    ss << "SuperTurbostake:" << FormatVersion(PPCOIN_VERSION);
+    ss << "Heirloom:" << FormatVersion(PPCOIN_VERSION);
     ss << "/";
-    ss << "SuperTurbostake:" << FormatVersion(PEERUNITY_VERSION);
+    ss << "Heirloom:" << FormatVersion(PEERUNITY_VERSION);
     ss << "(" << CLIENT_BUILD << ")/";
     return ss.str();
 }
@@ -1126,7 +1126,7 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return MyGetSpecialFolderPath(CSIDL_STARTUP, true) / "SuperTurbostake.lnk";
+    return MyGetSpecialFolderPath(CSIDL_STARTUP, true) / "Heirloom.lnk";
 }
 
 bool GetStartOnSystemStartup()
@@ -1207,7 +1207,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "SuperTurbostake.desktop";
+    return GetAutostartDir() / "Heirloom.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -1248,7 +1248,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a bitcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=SuperTurbostake\n";
+        optionFile << "Name=Heirloom\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

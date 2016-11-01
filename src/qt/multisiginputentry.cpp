@@ -129,10 +129,10 @@ void MultisigInputEntry::on_transactionId_textChanged(const QString &transaction
         {
             CBitcoinAddress address(addr);
             QString addressStr(address.ToString().c_str());
-            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" STRB"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + addressStr + QString(" - ") + amountStr + QString(" HEIR"));
         }
         else
-            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" STRB"));
+            ui->transactionOutput->addItem(idStr + QString(" - ") + amountStr + QString(" HEIR"));
     }
 }
 

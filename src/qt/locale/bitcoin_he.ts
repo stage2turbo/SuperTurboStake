@@ -6,22 +6,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="14"/>
-        <source>About SuperTurbostake</source>
+        <source>About Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="75"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;SuperTurbostake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Heirloom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="113"/>
-        <source>Copyright © 2014 SuperTurbostake Developers</source>
+        <source>Copyright © 2014 Heirloom Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/aboutdialog.ui" line="120"/>
-        <source>Copyright © 2011-2014 SuperTurbostake Developers</source>
+        <source>Copyright © 2011-2014 Heirloom Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -45,7 +45,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="20"/>
-        <source>These are your SuperTurbostake addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Heirloom addresses for receiving payments.  You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -262,7 +262,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../askpassphrasedialog.cpp" line="117"/>
-        <source>SuperTurbostake will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
+        <source>Heirloom will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your SuperTurbostakes from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -378,7 +378,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="254"/>
-        <source>Show information about SuperTurbostake</source>
+        <source>Show information about Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -493,37 +493,37 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="76"/>
-        <source>SuperTurbostake Wallet</source>
+        <source>Heirloom Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="222"/>
-        <source>Send coins to a SuperTurbostake address</source>
+        <source>Send coins to a Heirloom address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="253"/>
-        <source>&amp;About SuperTurbostake</source>
+        <source>&amp;About Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="260"/>
-        <source>Modify configuration options for SuperTurbostake</source>
+        <source>Modify configuration options for Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="262"/>
-        <source>Show/Hide &amp;SuperTurbostake</source>
+        <source>Show/Hide &amp;Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="263"/>
-        <source>Show or hide the SuperTurbostake window</source>
+        <source>Show or hide the Heirloom window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoingui.cpp" line="415"/>
-        <source>SuperTurbostake client</source>
+        <source>Heirloom client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -533,7 +533,7 @@ Are you sure you wish to encrypt your wallet?</source>
     </message>
     <message numerus="yes">
         <location filename="../bitcoingui.cpp" line="507"/>
-        <source>%n active connection(s) to SuperTurbostake network</source>
+        <source>%n active connection(s) to Heirloom network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -673,7 +673,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="128"/>
-        <source>A fatal error occured. SuperTurbostake can no longer continue safely and will quit.</source>
+        <source>A fatal error occured. Heirloom can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -965,7 +965,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="287"/>
-        <source>Whether to show SuperTurbostake addresses in the transaction list</source>
+        <source>Whether to show Heirloom addresses in the transaction list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1033,7 +1033,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../editaddressdialog.cpp" line="96"/>
-        <source>The entered address &quot;%1&quot; is not a valid SuperTurbostake address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Heirloom address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1076,7 +1076,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="187"/>
-        <source>Automatically open the SuperTurbostake client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Heirloom client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1111,7 +1111,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
-        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 STRB fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
+        <source>Mandatory network transaction fee per kB transferred. Most transactions are 1 kB and incur a 0.01 HEIR fee. Note: transfer size may increase depending on the number of input transactions required to be added together to fund the payment.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1131,12 +1131,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="172"/>
-        <source>&amp;Start SuperTurbostake on window system startup</source>
+        <source>&amp;Start Heirloom on window system startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="173"/>
-        <source>Automatically start SuperTurbostake after the computer is turned on</source>
+        <source>Automatically start Heirloom after the computer is turned on</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1421,7 +1421,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/qrcodedialog.ui" line="105"/>
-        <source>STRB</source>
+        <source>HEIR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1464,7 +1464,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>RPCConsole</name>
     <message>
         <location filename="../forms/rpcconsole.ui" line="14"/>
-        <source>SuperTurbostake (SuperTurbostake) debug window</source>
+        <source>Heirloom (Heirloom) debug window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1556,7 +1556,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="306"/>
-        <source>Welcome to the SuperTurbostake RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <source>Welcome to the Heirloom RPC console.&lt;br&gt;Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.&lt;br&gt;Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1790,7 +1790,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="36"/>
-        <source>Enter a SuperTurbostake address</source>
+        <source>Enter a Heirloom address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1879,7 +1879,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="25"/>
-        <source>Enter a SuperTurbostake address</source>
+        <source>Enter a Heirloom address</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1944,7 +1944,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="152"/>
-        <source>Sign the message to prove you own this SuperTurbostake address</source>
+        <source>Sign the message to prove you own this Heirloom address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1980,7 +1980,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../forms/signverifymessagedialog.ui" line="295"/>
-        <source>Verify the message to ensure it was signed with the specified SuperTurbostake address</source>
+        <source>Verify the message to ensure it was signed with the specified Heirloom address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2006,7 +2006,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="31"/>
         <location filename="../signverifymessagedialog.cpp" line="32"/>
-        <source>Enter a SuperTurbostake address</source>
+        <source>Enter a Heirloom address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2565,12 +2565,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="8"/>
-        <source>Unable to bind to port %d on this computer.  SuperTurbostake is probably already running.</source>
+        <source>Unable to bind to port %d on this computer.  Heirloom is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="12"/>
-        <source>SuperTurbostake version</source>
+        <source>Heirloom version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2595,7 +2595,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="18"/>
-        <source>Specify configuration file (default: SuperTurbostake.conf)</source>
+        <source>Specify configuration file (default: Heirloom.conf)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2856,22 +2856,22 @@ SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="78"/>
-        <source>Cannot obtain a lock on data directory %s.  SuperTurbostake is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  Heirloom is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="81"/>
-        <source>SuperTurbostake</source>
+        <source>Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="88"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of SuperTurbostake</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Heirloom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="89"/>
-        <source>Wallet needed to be rewritten: restart SuperTurbostake to complete</source>
+        <source>Wallet needed to be rewritten: restart Heirloom to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2888,7 +2888,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location filename="../bitcoinstrings.cpp" line="119"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong SuperTurbostake will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct.  If your clock is wrong Heirloom will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

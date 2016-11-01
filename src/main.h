@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2013 The SuperTurbostake developers
+// Copyright (c) 2011-2013 The Heirloom developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
@@ -527,7 +527,7 @@ public:
 
     bool IsCoinStake() const
     {
-        // SuperTurbostake: the coin stake transaction is marked with the first output empty
+        // Heirloom: the coin stake transaction is marked with the first output empty
         return (vin.size() > 0 && (!vin[0].prevout.IsNull()) && vout.size() >= 2 && vout[0].IsEmpty());
     }
 
@@ -701,7 +701,7 @@ public:
     bool ClientConnectInputs();
     bool CheckTransaction() const;
     bool AcceptToMemoryPool(CTxDB& txdb, bool fCheckInputs=true, bool* pfMissingInputs=NULL);
-    bool GetCoinAge(CTxDB& txdb, uint64& nCoinAge) const;  // SuperTurbostake: get transaction coin age
+    bool GetCoinAge(CTxDB& txdb, uint64& nCoinAge) const;  // Heirloom: get transaction coin age
 
 protected:
     const CTxOut& GetOutputFor(const CTxIn& input, const MapPrevTx& inputs) const;
@@ -845,7 +845,7 @@ public:
     // network and disk
     std::vector<CTransaction> vtx;
 
-    // SuperTurbostake: block signature - signed by coin base txout[0]'s owner
+    // Heirloom: block signature - signed by coin base txout[0]'s owner
     std::vector<unsigned char> vchBlockSig;
 
     // memory only
@@ -914,7 +914,7 @@ public:
 
     void UpdateTime(const CBlockIndex* pindexPrev);
 
-    // SuperTurbostake: two types of block: proof-of-work or proof-of-stake
+    // Heirloom: two types of block: proof-of-work or proof-of-stake
     bool IsProofOfStake() const
     {
         return (vtx.size() > 1 && vtx[1].IsCoinStake());
@@ -930,7 +930,7 @@ public:
         return IsProofOfStake()? std::make_pair(vtx[1].vin[0].prevout, vtx[1].nTime) : std::make_pair(COutPoint(), (unsigned int)0);
     }
 
-    // SuperTurbostake: get max transaction timestamp
+    // Heirloom: get max transaction timestamp
     int64 GetMaxTransactionTime() const
     {
         int64 maxTransactionTime = 0;
@@ -1081,10 +1081,10 @@ public:
     bool AddToBlockIndex(unsigned int nFile, unsigned int nBlockPos);
     bool CheckBlock() const;
     bool AcceptBlock();
-    bool GetCoinAge(uint64& nCoinAge) const; // SuperTurbostake: calculate total coin age spent in block
+    bool GetCoinAge(uint64& nCoinAge) const; // Heirloom: calculate total coin age spent in block
     bool SignBlock(const CKeyStore& keystore);
     bool CheckBlockSignature() const;
-    unsigned int GetStakeEntropyBit() const; // SuperTurbostake: entropy bit for stake modifier if chosen by modifier
+    unsigned int GetStakeEntropyBit() const; // Heirloom: entropy bit for stake modifier if chosen by modifier
 
 private:
     bool SetBestChainInner(CTxDB& txdb, CBlockIndex *pindexNew);
@@ -1110,12 +1110,12 @@ public:
     CBlockIndex* pnext;
     unsigned int nFile;
     unsigned int nBlockPos;
-    CBigNum bnChainTrust; // SuperTurbostake: trust score of block chain
+    CBigNum bnChainTrust; // Heirloom: trust score of block chain
     int nHeight;
     int64 nMint;
     int64 nMoneySupply;
 
-    unsigned int nFlags;  // SuperTurbostake: block index flags
+    unsigned int nFlags;  // Heirloom: block index flags
     enum  
     {
         BLOCK_PROOF_OF_STAKE = (1 << 0), // is proof-of-stake block

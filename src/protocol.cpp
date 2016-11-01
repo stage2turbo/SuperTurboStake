@@ -21,7 +21,7 @@ static unsigned char pchMessageStartTestOld[4] = { 0xfc, 0xf1, 0xf2, 0xe1 };
 static unsigned char pchMessageStartTestNew[4] = { 0xf2, 0xe2, 0xc0, 0xe1 };
 static unsigned int nMessageStartTestSwitchTime = 1346200000;
 
-// SuperTurbostake message start (switch from Bitcoin's in v0.2)
+// Heirloom message start (switch from Bitcoin's in v0.2)
 static unsigned char pchMessageStartBitcoin[4] = { 0xfc, 0xbe, 0xfc, 0xb9};
 static unsigned char pchMessageStartSuperTurbostake[4] = { 0xfc, 0xb9, 0xb9, 0xe3 };
 static unsigned int nMessageStartSwitchTime = 1347300000;

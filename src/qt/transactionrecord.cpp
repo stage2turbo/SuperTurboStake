@@ -43,7 +43,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet *
 
     if (showTransaction(wtx))
     {
-        if (wtx.IsCoinStake()) // SuperTurbostake: coinstake transaction
+        if (wtx.IsCoinStake()) // Heirloom: coinstake transaction
         {
             TransactionRecord sub(hash, nTime, TransactionRecord::StakeMint, "", -nDebit, wtx.GetValueOut());
             CTxDestination address;
